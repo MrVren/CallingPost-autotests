@@ -11,8 +11,8 @@ describe("Reward Center", () => {
     "Refer Email",
     {
       retries: {
-        runMode: 2,
-        openMode: 2,
+        runMode: 0,
+        openMode: 0,
       },
     },
     function () {

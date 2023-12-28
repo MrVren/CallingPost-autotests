@@ -9,12 +9,12 @@ const EmailMessage = new CreateMessage();
 describe("New Communication", () => {
   it(
     "Create Email Message",
-    // {
-    //   retries: {
-    //     runMode: 2,
-    //     openMode: 2,
-    //   },
-    // },
+     {
+       retries: {
+         runMode: 0,
+         openMode: 0,
+       },
+     },
     function () {
       Login.ValidLogin();
       EmailMessage.OpenNewCommunication();

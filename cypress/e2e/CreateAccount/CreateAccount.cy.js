@@ -9,8 +9,8 @@ describe("Registration", () => {
     "Create Free Account",
     {
       retries: {
-        runMode: 1,
-        openMode: 1,
+        runMode: 0,
+        openMode: 0,
       },
     },
     function () {

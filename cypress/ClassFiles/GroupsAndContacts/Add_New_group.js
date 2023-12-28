@@ -23,7 +23,7 @@ class GroupsAndContacts {
     cy.wait(1000);
     cy.get(selectors.selectGroupInput).eq(1).click();
     cy.wait(1000);
-    cy.get(selectors.selectGroup).eq(2).click();
+    cy.get(selectors.selectGroup).eq(0).click();
     cy.wait(1000);
     cy.get(selectors.saveGrpBtn).eq(0).click();
   }

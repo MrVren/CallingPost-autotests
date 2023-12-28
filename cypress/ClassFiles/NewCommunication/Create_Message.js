@@ -42,7 +42,7 @@ class CreateVoiceMessage {
     cy.wait(1000);
     cy.get(selectors.createVoiceMsgBtn).eq(-1).click();
     cy.wait(5000);
-    cy.get(selectors.sendMessageBtn).eq(1).click();
+    cy.get(selectors.sendMessageBtn).eq(0).click();
     cy.wait(2000);
   }
 
@@ -63,7 +63,7 @@ class CreateVoiceMessage {
     cy.wait(1000);
     cy.get(selectors.createVoiceMsgBtn).eq(-1).click();
     cy.wait(5000);
-    cy.get(selectors.sendMessageBtn).eq(1).click();
+    cy.get(selectors.sendMessageBtn).eq(0).click();
     cy.wait(2000);
   }
 
@@ -84,7 +84,7 @@ class CreateVoiceMessage {
     cy.wait(1000);
     cy.get(selectors.createVoiceMsgBtn).eq(-1).click();
     cy.wait(8000);
-    cy.get(selectors.sendMessageBtn).eq(1).click();
+    cy.get(selectors.sendMessageBtn).eq(0).click();
     cy.wait(2000);
   }
 }

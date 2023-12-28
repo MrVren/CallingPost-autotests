@@ -6,6 +6,7 @@ export default {
   keywordNameInput: 'input[placeholder="Enter keyword here."]',
   paymentInput: 'mat-select[formcontrolname="paymentProfileID"]',
   paymentOptionInput: 'mat-select[formcontrolname="prepayOptionId"]',
-  selectOption: ".mat-option-text",
+  //selectOption: ".mat-option-text",
+  selectionOption: ".mat-select-placeholder", 
   saveKeywordBtn: "button.button-submit",
 };
