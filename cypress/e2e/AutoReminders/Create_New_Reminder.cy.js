@@ -11,8 +11,8 @@ describe("Auto Reminders", () => {
     "Create New Reminder",
     {
       retries: {
-        runMode: 2,
-        openMode: 2,
+        runMode: 0,
+        openMode: 0,
       },
     },
     function () {

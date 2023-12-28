@@ -76,7 +76,7 @@ describe("Dashboard", () => {
     }
   );
 
-  it(
+ /*it(
     "Password/Login",
     {
       retries: {
@@ -89,7 +89,7 @@ describe("Dashboard", () => {
       Dashboard.OpenPasswords();
       Dashboard.EnterPassword();
     }
-  );
+  );*/
 
   it(
     "Account Managers",

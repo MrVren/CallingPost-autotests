@@ -15,7 +15,7 @@ class Login {
       cy.wait(1000);
       cy.get(selectors.loginBtn).click();
       cy.wait(8000);
-      cy.get(selectors.tftBtn).eq(0).click();
+     // cy.get(selectors.tftBtn).eq(0).click();
     });
     cy.wait(3000);
   }

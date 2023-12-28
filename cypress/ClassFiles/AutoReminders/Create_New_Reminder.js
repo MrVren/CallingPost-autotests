@@ -25,7 +25,7 @@ class CreateReminder {
     cy.wait(1000);
     cy.get(selectors.selectPhoneInput).click();
     cy.wait(1000);
-    cy.get(selectors.selectOption).eq(2).click();
+    cy.get(selectors.selectOption).eq(0).click();
     cy.wait(1000);
     cy.get(selectors.selectCallerInput).click();
     cy.wait(1000);
