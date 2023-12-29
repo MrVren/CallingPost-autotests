@@ -7,6 +7,12 @@ const Login = new LogIn();
 const TextKeyword = new TextKeywords();
 
 describe("Text Keywords", () => {
+
+  afterEach(() => {
+    // Cleanup code: Delete the created keyword through the UI
+    TextKeyword.DeleteKeyword(); // Use the correct instance name
+  });
+
   it(
     "Create Keyword",
     {
