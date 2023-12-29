@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-12-29T13:40:11.068Z",
+    "end": "2023-12-29T13:40:36.813Z",
+    "duration": 25745,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "c1acc9c5-11a2-4146-a58e-395476f89d49",
+      "title": "",
+      "fullFile": "cypress/e2e/GroupsAndContacts/All_Contacts.cy.js",
+      "file": "cypress/e2e/GroupsAndContacts/All_Contacts.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "57779a99-2d49-48e2-bb66-ac57b0a69f43",
+          "title": "Groups And Contacts",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "C165: All Contacts",
+              "fullTitle": "Groups And Contacts C165: All Contacts",
+              "timedOut": null,
+              "duration": 24796,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Login.ValidLogin();\nGroupsAndContact.OpenGroups();\nGroupsAndContact.OpenAllContacts();",
+              "err": {},
+              "uuid": "0edefe60-6fae-4fe1-96a8-ab27e8c9ebc2",
+              "parentUUID": "57779a99-2d49-48e2-bb66-ac57b0a69f43",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "0edefe60-6fae-4fe1-96a8-ab27e8c9ebc2"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 24796,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports/html/.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

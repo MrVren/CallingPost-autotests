@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-12-29T13:50:16.111Z",
+    "end": "2023-12-29T13:50:44.447Z",
+    "duration": 28336,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "dd723f16-4202-4abe-9500-9504e07fc8ee",
+      "title": "",
+      "fullFile": "cypress/e2e/RewardCenter/WriteReview.cy.js",
+      "file": "cypress/e2e/RewardCenter/WriteReview.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7db930ed-baed-4389-a8db-c4abfee05739",
+          "title": "Reward Center",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "C152: Write Review",
+              "fullTitle": "Reward Center C152: Write Review",
+              "timedOut": null,
+              "duration": 27432,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Login.ValidLogin();\nRewards.OpenRewardCenter();\nRewards.OpenWriteReview();\nRewards.EnterReview();\nRewards.SubmitReview();",
+              "err": {},
+              "uuid": "7cc36d30-26a1-41b8-ab6c-66483f6a617c",
+              "parentUUID": "7db930ed-baed-4389-a8db-c4abfee05739",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "7cc36d30-26a1-41b8-ab6c-66483f6a617c"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 27432,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports/html/.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

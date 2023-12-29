@@ -6,6 +6,7 @@ module.exports = defineConfig({
   chromeWebSecurity: false,
   reporter: 'cypress-mochawesome-reporter',
   e2e: {
+    baseUrl: 'test.callingpost.com',
     experimentalRunAllSpecs: true,
     setupNodeEvents(on, config) {
       require('cypress-mochawesome-reporter/plugin')(on);
