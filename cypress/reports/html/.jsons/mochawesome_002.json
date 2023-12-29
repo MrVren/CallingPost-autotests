@@ -1,0 +1,181 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 5,
+    "passes": 5,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-12-29T13:00:57.828Z",
+    "end": "2023-12-29T13:02:10.271Z",
+    "duration": 72443,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "5c33940e-f5f4-402b-9f40-b2aa6cb74405",
+      "title": "",
+      "fullFile": "cypress/e2e/Dashboard/Dashboard.cy.js",
+      "file": "cypress/e2e/Dashboard/Dashboard.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "df577a82-9bea-41ef-91a9-d7ac3a0e7c2c",
+          "title": "Dashboard",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Left Menu",
+              "fullTitle": "Dashboard Left Menu",
+              "timedOut": null,
+              "duration": 32842,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress/e2e/Dashboard/Dashboard.cy.js\"\n}",
+              "code": "Login.ValidLogin();\nDashboard.MenuBtn();\nDashboard.MenuBtn();",
+              "err": {},
+              "uuid": "0d3fe0d8-474e-40be-95a8-a54f0f14832c",
+              "parentUUID": "df577a82-9bea-41ef-91a9-d7ac3a0e7c2c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Notifications",
+              "fullTitle": "Dashboard Notifications",
+              "timedOut": null,
+              "duration": 8842,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress/e2e/Dashboard/Dashboard.cy.js\"\n}",
+              "code": "Login.OpenDashboard();\nDashboard.OpenNotifications();",
+              "err": {},
+              "uuid": "aaff7ed2-6800-43d0-9d98-bafaf8b4a093",
+              "parentUUID": "df577a82-9bea-41ef-91a9-d7ac3a0e7c2c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Profile Menu & Profile Settings",
+              "fullTitle": "Dashboard Profile Menu & Profile Settings",
+              "timedOut": null,
+              "duration": 9864,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress/e2e/Dashboard/Dashboard.cy.js\"\n}",
+              "code": "Login.OpenDashboard();\nDashboard.OpenProfileSettings();",
+              "err": {},
+              "uuid": "bcab6352-111e-47b1-8cfe-4a0c3d79a432",
+              "parentUUID": "df577a82-9bea-41ef-91a9-d7ac3a0e7c2c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "System Settings",
+              "fullTitle": "Dashboard System Settings",
+              "timedOut": null,
+              "duration": 9907,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress/e2e/Dashboard/Dashboard.cy.js\"\n}",
+              "code": "Login.OpenDashboard();\nDashboard.OpenSystemSettings();",
+              "err": {},
+              "uuid": "47706c0a-c2a2-4fa0-a63c-f9c0b122f326",
+              "parentUUID": "df577a82-9bea-41ef-91a9-d7ac3a0e7c2c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Account Managers",
+              "fullTitle": "Dashboard Account Managers",
+              "timedOut": null,
+              "duration": 9943,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress/e2e/Dashboard/Dashboard.cy.js\"\n}",
+              "code": "Login.OpenDashboard();\nDashboard.OpenAccountManagers();",
+              "err": {},
+              "uuid": "44626d3e-03a9-413e-8b91-31cc11f92a50",
+              "parentUUID": "df577a82-9bea-41ef-91a9-d7ac3a0e7c2c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "0d3fe0d8-474e-40be-95a8-a54f0f14832c",
+            "aaff7ed2-6800-43d0-9d98-bafaf8b4a093",
+            "bcab6352-111e-47b1-8cfe-4a0c3d79a432",
+            "47706c0a-c2a2-4fa0-a63c-f9c0b122f326",
+            "44626d3e-03a9-413e-8b91-31cc11f92a50"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 71398,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports/html/.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

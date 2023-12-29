@@ -8,7 +8,7 @@ const Reminder = new CreateReminder();
 
 describe("Auto Reminders", () => {
   it(
-    "Create New Reminder",
+    "C155: Create New Reminder",
     {
       retries: {
         runMode: 0,
