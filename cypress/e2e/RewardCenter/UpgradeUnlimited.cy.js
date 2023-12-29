@@ -8,7 +8,7 @@ const Rewards = new RewardCenter();
 
 describe("Reward Center", () => {
   it(
-    "Upgrade Unlimited",
+    "C150: Upgrade Unlimited",
     {
       retries: {
         runMode: 0,

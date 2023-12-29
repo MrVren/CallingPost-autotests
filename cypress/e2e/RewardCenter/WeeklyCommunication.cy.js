@@ -8,7 +8,7 @@ const Rewards = new RewardCenter();
 
 describe("Reward Center", () => {
   it(
-    "Weekly Communications",
+    "C151: Weekly Communications",
     {
       retries: {
         runMode: 0,

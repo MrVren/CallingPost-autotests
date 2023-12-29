@@ -8,7 +8,7 @@ const Rewards = new RewardCenter();
 
 describe("Reward Center", () => {
   it(
-    "Write Review",
+    "C152: Write Review",
     {
       retries: {
         runMode: 0,

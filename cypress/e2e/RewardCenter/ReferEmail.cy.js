@@ -8,7 +8,7 @@ const Rewards = new RewardCenter();
 
 describe("Reward Center", () => {
   it(
-    "Refer Email",
+    "C149: Refer Email",
     {
       retries: {
         runMode: 0,
