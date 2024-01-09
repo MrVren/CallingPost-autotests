@@ -2,9 +2,9 @@
 export default {
   createAccountBtn: 'a[routerlink="/registration"]',
   phoneNumberInput:
-    'input[placeholder="Phone Number (this will be your UserID)"]',
-  pinInput: 'input[placeholder="6 Digit PIN (numbers only)"]',
-  emailInput: 'input[placeholder="Email Address"]',
+    'input[data-placeholder="Phone Number (this will be your UserID)"]',
+  pinInput: 'input[data-placeholder="6 Digit PIN (numbers only)"]',
+  emailInput: 'input[data-placeholder="Email Address"]',
   nameInput: 'input[formcontrolname="firstName"]',
   organizationInput: "div.mat-select-trigger",
   selectOrganization: ".mat-option-text", // use eq 0

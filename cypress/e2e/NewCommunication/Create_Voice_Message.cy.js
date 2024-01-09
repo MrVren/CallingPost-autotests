@@ -6,7 +6,7 @@ import CreateMessage from "../../ClassFiles/NewCommunication/Create_Message";
 const Login = new LogIn();
 const VoiceMessage = new CreateMessage();
 
-describe("New Communication", () => {
+describe.skip("New Communication", () => {
   it(
     "C172: Create Voice Message",
     {

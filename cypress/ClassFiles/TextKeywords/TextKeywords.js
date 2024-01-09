@@ -58,10 +58,13 @@ DeleteKeyword() {
   .parents('.list-item-inner')
   .find(selectors.keywordCheckbox)
   .click();
+  // Click the main delete button
   cy.contains('span.typography-16', 'Delete').click();
   cy.wait(3000); 
+  // Click the delete confirmation button
   cy.get('mat-dialog-container button.mat-button-base').contains('span.mat-button-wrapper', 'Delete').click();
   cy.wait(2000); 
+  // Verify that the generated keyword has been deleted
   cy.get(selectors.keywordList).should('not.contain', this.generatedKeyword);
 }
 

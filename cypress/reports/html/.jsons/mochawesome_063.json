@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-12-29T14:05:40.943Z",
+    "end": "2023-12-29T14:06:06.415Z",
+    "duration": 25472,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "f5299450-0efb-4b67-a106-5440a1230b98",
+      "title": "",
+      "fullFile": "cypress/e2e/RewardCenter/UpgradeUnlimited.cy.js",
+      "file": "cypress/e2e/RewardCenter/UpgradeUnlimited.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "6592929c-b922-4af9-9888-b821ff522e5d",
+          "title": "Reward Center",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "C150: Upgrade Unlimited",
+              "fullTitle": "Reward Center C150: Upgrade Unlimited",
+              "timedOut": null,
+              "duration": 24542,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Login.ValidLogin();\nRewards.OpenRewardCenter();\nRewards.OpenUpgradeUnlimited();\nRewards.SelectContacts();\nRewards.CreditPricing();\n// Rewards.UpgradePremium();",
+              "err": {},
+              "uuid": "b335969c-9ff8-4c17-a35b-e9e71176a3a4",
+              "parentUUID": "6592929c-b922-4af9-9888-b821ff522e5d",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "b335969c-9ff8-4c17-a35b-e9e71176a3a4"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 24542,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports/html/.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

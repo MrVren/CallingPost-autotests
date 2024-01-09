@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-12-29T20:38:20.847Z",
+    "end": "2023-12-29T20:39:25.149Z",
+    "duration": 64302,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "6e007e76-21ed-43b4-a058-3d8cbeaa7498",
+      "title": "",
+      "fullFile": "cypress/e2e/MessageLibrary/Create_Voice_Message.cy.js",
+      "file": "cypress/e2e/MessageLibrary/Create_Voice_Message.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "dc4e0dc6-fd4a-4560-8628-a789cdacc900",
+          "title": "Message Library",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "C169: Create Voice Message",
+              "fullTitle": "Message Library C169: Create Voice Message",
+              "timedOut": null,
+              "duration": 64210,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Login.ValidLogin();\nVoiceMessage.OpenMessageLibrary();\nVoiceMessage.CreateVoiceMsg();",
+              "err": {},
+              "uuid": "51cd5fa4-5164-40d3-b7c3-84cd33d6753c",
+              "parentUUID": "dc4e0dc6-fd4a-4560-8628-a789cdacc900",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "51cd5fa4-5164-40d3-b7c3-84cd33d6753c"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 64210,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports/html/.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

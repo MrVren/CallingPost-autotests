@@ -1,0 +1,109 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2023-12-29T14:19:58.008Z",
+    "end": "2023-12-29T14:20:38.463Z",
+    "duration": 40455,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "1aa141d4-ad6d-4da3-9c31-f8ebcc00dbf5",
+      "title": "",
+      "fullFile": "cypress/e2e/NewCommunication/Create_Email_Message.cy.js",
+      "file": "cypress/e2e/NewCommunication/Create_Email_Message.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7d9cc3e9-6c19-4dda-b51e-c5ec2dc1b447",
+          "title": "New Communication",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "C170: Create Email Message",
+              "fullTitle": "New Communication C170: Create Email Message",
+              "timedOut": null,
+              "duration": 40411,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"/NewCommunication/Create_Email_Message.cy.js/New Communication -- C170 Create Email Message (failed).png\"\n    ]\n  ]\n}",
+              "code": "Login.ValidLogin();\nEmailMessage.OpenNewCommunication();\nEmailMessage.SelectGroup();\nEmailMessage.CreateEmailMessage();",
+              "err": {
+                "message": "CypressError: Timed out retrying after 4000ms: `cy.clear()` failed because the center of this element is hidden from view:\n\n`<input _ngcontent-khr-c321=\"\" matinput=\"\" placeholder=\"Enter Your Email Subject Here\" type=\"text\" formcontrolname=\"emailSubject\" class=\"mat-input-element mat-form-field-autofill-control ng-tns-c87-20 ng-untouched ng-pristine ng-invalid cdk-text-field-autofill-monitored\" id=\"mat-input-5\" data-placeholder=\"Enter Your Email Subject Here\" aria-invalid=\"false\" aria-required=\"false\">`\n\nFix this problem, or use `{force: true}` to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with",
+                "estack": "CypressError: Timed out retrying after 4000ms: `cy.clear()` failed because the center of this element is hidden from view:\n\n`<input _ngcontent-khr-c321=\"\" matinput=\"\" placeholder=\"Enter Your Email Subject Here\" type=\"text\" formcontrolname=\"emailSubject\" class=\"mat-input-element mat-form-field-autofill-control ng-tns-c87-20 ng-untouched ng-pristine ng-invalid cdk-text-field-autofill-monitored\" id=\"mat-input-5\" data-placeholder=\"Enter Your Email Subject Here\" aria-invalid=\"false\" aria-required=\"false\">`\n\nFix this problem, or use `{force: true}` to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with\n    at ensureIsDescendent (https://test.callingpost.com/__cypress/runner/cypress_runner.js:139726:74)\n    at ensureDescendents (https://test.callingpost.com/__cypress/runner/cypress_runner.js:139762:5)\n    at possiblyScrollMultipleTimes (https://test.callingpost.com/__cypress/runner/cypress_runner.js:139869:22)\n    at scrollContainers (https://test.callingpost.com/__cypress/runner/cypress_runner.js:139891:16)\n    at ensureDescendentsAndScroll (https://test.callingpost.com/__cypress/runner/cypress_runner.js:139895:14)\n    at ensureElIsNotCovered (https://test.callingpost.com/__cypress/runner/cypress_runner.js:139899:5)\n    at runAllChecks (https://test.callingpost.com/__cypress/runner/cypress_runner.js:140079:52)\n    at retryActionability (https://test.callingpost.com/__cypress/runner/cypress_runner.js:140116:16)\n    at tryCatcher (https://test.callingpost.com/__cypress/runner/cypress_runner.js:18744:23)\n    at Promise.attempt.Promise.try (https://test.callingpost.com/__cypress/runner/cypress_runner.js:16018:29)\n    at whenStable (https://test.callingpost.com/__cypress/runner/cypress_runner.js:156400:65)\n    at <unknown> (https://test.callingpost.com/__cypress/runner/cypress_runner.js:155841:14)\n    at tryCatcher (https://test.callingpost.com/__cypress/runner/cypress_runner.js:18744:23)\n    at Promise._settlePromiseFromHandler (https://test.callingpost.com/__cypress/runner/cypress_runner.js:16679:31)\n    at Promise._settlePromise (https://test.callingpost.com/__cypress/runner/cypress_runner.js:16736:18)\n    at Promise._settlePromise0 (https://test.callingpost.com/__cypress/runner/cypress_runner.js:16781:10)\n    at Promise._settlePromises (https://test.callingpost.com/__cypress/runner/cypress_runner.js:16861:18)\n    at Promise._fulfill (https://test.callingpost.com/__cypress/runner/cypress_runner.js:16805:18)\n    at <unknown> (https://test.callingpost.com/__cypress/runner/cypress_runner.js:18419:46)\nFrom Your Spec Code:\n    at CreateVoiceMessage.CreateEmailMessage (webpack:///./cypress/ClassFiles/NewCommunication/Create_Message.js:79:40)\n    at Context.eval (webpack:///./cypress/e2e/NewCommunication/Create_Email_Message.cy.js:22:19)",
+                "diff": null
+              },
+              "uuid": "85eaab71-1611-4bb8-9c31-f5f3e539fceb",
+              "parentUUID": "7d9cc3e9-6c19-4dda-b51e-c5ec2dc1b447",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "85eaab71-1611-4bb8-9c31-f5f3e539fceb"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 40411,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports/html/.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

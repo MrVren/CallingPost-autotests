@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-12-29T21:59:34.675Z",
+    "end": "2023-12-29T22:00:20.543Z",
+    "duration": 45868,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "e52f05fa-d0d5-4176-9b11-dcf3e62b63a3",
+      "title": "",
+      "fullFile": "cypress/e2e/NewCommunication/Create_Text_Message.cy.js",
+      "file": "cypress/e2e/NewCommunication/Create_Text_Message.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "003ec19d-4089-4982-83ae-84af1edd8c04",
+          "title": "New Communication",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "C171: Create Text Message",
+              "fullTitle": "New Communication C171: Create Text Message",
+              "timedOut": null,
+              "duration": 45799,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Login.ValidLogin();\nTextMessage.OpenNewCommunication();\nTextMessage.SelectGroup();\nTextMessage.CreateTextMessage();",
+              "err": {},
+              "uuid": "36ee13fb-afd7-442c-92cf-869e99332e61",
+              "parentUUID": "003ec19d-4089-4982-83ae-84af1edd8c04",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "36ee13fb-afd7-442c-92cf-869e99332e61"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 45799,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports/html/.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

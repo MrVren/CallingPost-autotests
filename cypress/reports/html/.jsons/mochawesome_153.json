@@ -1,0 +1,181 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 5,
+    "passes": 5,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-12-29T21:52:27.908Z",
+    "end": "2023-12-29T21:53:51.769Z",
+    "duration": 83861,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "e18ac532-bc85-4f07-bde9-3822df89b249",
+      "title": "",
+      "fullFile": "cypress/e2e/Dashboard/Dashboard.cy.js",
+      "file": "cypress/e2e/Dashboard/Dashboard.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "dd9668ec-f1f5-4080-a9b8-ca95bfb28f97",
+          "title": "Dashboard",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "C157: Left Menu",
+              "fullTitle": "Dashboard C157: Left Menu",
+              "timedOut": null,
+              "duration": 44824,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Login.ValidLogin();\nDashboard.MenuBtn();\nDashboard.MenuBtn();",
+              "err": {},
+              "uuid": "2cb64679-6075-4fd3-bac1-9ba65011bfc0",
+              "parentUUID": "dd9668ec-f1f5-4080-a9b8-ca95bfb28f97",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "C158: Notifications",
+              "fullTitle": "Dashboard C158: Notifications",
+              "timedOut": null,
+              "duration": 8934,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Login.OpenDashboard();\nDashboard.OpenNotifications();",
+              "err": {},
+              "uuid": "1c1b3233-089a-45aa-b21c-7f2ceafed18c",
+              "parentUUID": "dd9668ec-f1f5-4080-a9b8-ca95bfb28f97",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "C159: Profile Menu & Profile Settings",
+              "fullTitle": "Dashboard C159: Profile Menu & Profile Settings",
+              "timedOut": null,
+              "duration": 9979,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Login.OpenDashboard();\nDashboard.OpenProfileSettings();",
+              "err": {},
+              "uuid": "84a611e5-22ad-4046-81ac-522afa6a073f",
+              "parentUUID": "dd9668ec-f1f5-4080-a9b8-ca95bfb28f97",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "C160: System Settings",
+              "fullTitle": "Dashboard C160: System Settings",
+              "timedOut": null,
+              "duration": 9947,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Login.OpenDashboard();\nDashboard.OpenSystemSettings();",
+              "err": {},
+              "uuid": "d040a314-61cb-4e68-8c39-f976e022360b",
+              "parentUUID": "dd9668ec-f1f5-4080-a9b8-ca95bfb28f97",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "C161: Account Managers",
+              "fullTitle": "Dashboard C161: Account Managers",
+              "timedOut": null,
+              "duration": 9924,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Login.OpenDashboard();\nDashboard.OpenAccountManagers();",
+              "err": {},
+              "uuid": "293d362b-3dbd-439d-b9bc-498b4158a149",
+              "parentUUID": "dd9668ec-f1f5-4080-a9b8-ca95bfb28f97",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "2cb64679-6075-4fd3-bac1-9ba65011bfc0",
+            "1c1b3233-089a-45aa-b21c-7f2ceafed18c",
+            "84a611e5-22ad-4046-81ac-522afa6a073f",
+            "d040a314-61cb-4e68-8c39-f976e022360b",
+            "293d362b-3dbd-439d-b9bc-498b4158a149"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 83608,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports/html/.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

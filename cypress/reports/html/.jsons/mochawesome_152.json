@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-12-29T21:51:30.038Z",
+    "end": "2023-12-29T21:52:24.901Z",
+    "duration": 54863,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "8bcc988e-16a8-405f-a942-47a9237d6b8d",
+      "title": "",
+      "fullFile": "cypress/e2e/AutoReminders/Create_New_Reminder.cy.js",
+      "file": "cypress/e2e/AutoReminders/Create_New_Reminder.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "0c5e30e9-13c5-430a-87df-05c363980e0f",
+          "title": "Auto Reminders",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "C155: Create New Reminder",
+              "fullTitle": "Auto Reminders C155: Create New Reminder",
+              "timedOut": null,
+              "duration": 54815,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Login.ValidLogin();\nReminder.OpenAutoReminders();\nReminder.OpenCreateReminder();\nReminder.EnterReminderDetails();\nReminder.SaveReminder();",
+              "err": {},
+              "uuid": "78071bea-cd71-4c71-8c42-6d081d3a412e",
+              "parentUUID": "0c5e30e9-13c5-430a-87df-05c363980e0f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "78071bea-cd71-4c71-8c42-6d081d3a412e"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 54815,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports/html/.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
