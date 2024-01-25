@@ -14,4 +14,5 @@ export default {
 
   //   Forgot Password
   forgotPasswordBtn: 'a[routerlink="/recover-user-password"]',
+  snackBar: ".toast > .typography-16",
 };

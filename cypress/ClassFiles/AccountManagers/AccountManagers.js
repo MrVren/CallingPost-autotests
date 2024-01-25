@@ -41,7 +41,7 @@ class AccountManager {
 
   CancelInvite() {
     cy.wait(1000);
-    cy.get(selectors.cancelInvite).eq(2).click();
+    cy.get(selectors.cancelInvite).contains("Cancel").click();
     cy.wait(1000);
     cy.get(selectors.inviteManagerBtn).eq(1).click();
   }

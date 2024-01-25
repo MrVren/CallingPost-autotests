@@ -23,8 +23,8 @@ describe("Dashboard", () => {
     "C157: Left Menu",
     {
       retries: {
-        runMode: 2,
-        openMode: 2,
+        runMode: 0,
+        openMode: 0,
       },
     },
     function () {
@@ -38,8 +38,8 @@ describe("Dashboard", () => {
     "C158: Notifications",
     {
       retries: {
-        runMode: 2,
-        openMode: 2,
+        runMode: 0,
+        openMode: 0,
       },
     },
     function () {
@@ -52,8 +52,8 @@ describe("Dashboard", () => {
     "C159: Profile Menu & Profile Settings",
     {
       retries: {
-        runMode: 2,
-        openMode: 2,
+        runMode: 0,
+        openMode: 0,
       },
     },
     function () {
@@ -95,8 +95,8 @@ describe("Dashboard", () => {
     "C161: Account Managers",
     {
       retries: {
-        runMode: 2,
-        openMode: 2,
+        runMode: 0,
+        openMode: 0,
       },
     },
     function () {

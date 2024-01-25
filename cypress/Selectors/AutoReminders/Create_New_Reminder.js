@@ -10,4 +10,8 @@ export default {
   selectCallerInput: 'mat-select[formcontrolname="callerId"]',
   openCalendar: 'input[formcontrolname="startDateTime"]',
   repeatInput: 'mat-select[formcontrolname="frequency"]',
+  reminderTable: ".user-reminders",
+  confirmDelete: "button.button--blue",
+  selectInput: "mat-select",
+  deleteBtn: '.delete',
 };

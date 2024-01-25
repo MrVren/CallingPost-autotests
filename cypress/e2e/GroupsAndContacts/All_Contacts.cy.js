@@ -21,4 +21,54 @@ describe("Groups And Contacts", () => {
       GroupsAndContact.OpenAllContacts();
     }
   );
+
+  it(
+    "Filter Contacts",
+    {
+      retries: {
+        runMode: 0,
+        openMode: 0,
+      },
+    },
+    function () {
+      Login.ValidLogin();
+      GroupsAndContact.OpenGroups();
+      GroupsAndContact.AllContacts();
+      GroupsAndContact.FilterGroup();
+    }
+  );
+
+  it(
+    "Search Contacts",
+    {
+      retries: {
+        runMode: 0,
+        openMode: 0,
+      },
+    },
+    function () {
+      Login.ValidLogin();
+      GroupsAndContact.OpenGroups();
+      GroupsAndContact.AllContacts();
+      GroupsAndContact.SearchContact();
+    }
+  );
+
+
+  it(
+    "Toggle Contact / Delete Icon",
+    {
+      retries: {
+        runMode: 0,
+        openMode: 0,
+      },
+    },
+    function () {
+      Login.ValidLogin();
+      GroupsAndContact.OpenGroups();
+      GroupsAndContact.AllContacts();
+      GroupsAndContact.ToggleContact();
+      GroupsAndContact.DeleteIcon();
+    }
+  );
 });

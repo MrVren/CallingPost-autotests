@@ -7,6 +7,7 @@ const Login = new LogIn();
 const GroupsAndContact = new GroupsAndContacts();
 
 describe("Groups And Contacts", () => {
+  // @smoke
   it(
     "C164: Add New Group",
     {
