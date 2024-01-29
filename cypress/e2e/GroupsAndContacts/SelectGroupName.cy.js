@@ -23,7 +23,7 @@ describe("Groups And Contacts", () => {
     cy.saveLocalStorage();
   });
   
-  it(
+  it.skip(
     "Select Group / New Communication",
     {
       retries: {

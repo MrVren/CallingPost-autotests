@@ -141,30 +141,39 @@ class GroupsAndContacts {
     cy.get(selectors.filterBtn).click();
     cy.get(selectors.sortFilter).click();
     cy.get(selectors.selectFilterOption).eq(0).click();
+    cy.wait(1000);
     cy.get(selectors.filterBtn).click();
     cy.get(selectors.sortFilter).click();
     cy.get(selectors.selectFilterOption).eq(1).click();
+    cy.wait(1000);
     cy.get(selectors.filterBtn).click();
     cy.get(selectors.sortFilter).click();
     cy.get(selectors.selectFilterOption).eq(2).click();
+    cy.wait(1000);
     cy.get(selectors.filterBtn).click();
     cy.get(selectors.sortFilter).click();
     cy.get(selectors.selectFilterOption).eq(3).click();
+    cy.wait(1000);
     cy.get(selectors.filterBtn).click();
     cy.get(selectors.sortFilter).click();
     cy.get(selectors.selectFilterOption).eq(4).click();
+    cy.wait(1000);
     cy.get(selectors.filterBtn).click();
     cy.get(selectors.sortFilter).click();
     cy.get(selectors.selectFilterOption).eq(5).click();
+    cy.wait(1000);
     cy.get(selectors.filterBtn).click();
     cy.get(selectors.sortFilter).click();
     cy.get(selectors.selectFilterOption).eq(6).click();
+    cy.wait(1000);
     cy.get(selectors.filterBtn).click();
     cy.get(selectors.sortFilter).click();
     cy.get(selectors.selectFilterOption).eq(7).click();
+    cy.wait(1000);
     cy.get(selectors.filterBtn).click();
     cy.get(selectors.sortFilter).click();
     cy.get(selectors.selectFilterOption).eq(8).click();
+    cy.wait(1000);
     cy.get(selectors.filterBtn).click();
     cy.get(selectors.sortFilter).click();
     cy.get(selectors.selectFilterOption).eq(9).click();
@@ -300,6 +309,7 @@ class GroupsAndContacts {
   }
 
   AddContactManually() {
+    cy.wait(5000)
     cy.get(selectors.tableRow).eq(-1).scrollIntoView();
     cy.get(selectors.tableRow).eq(-1).click();
     cy.get(selectors.addContact).click();
@@ -315,6 +325,7 @@ class GroupsAndContacts {
   }
 
   AllContacts() {
+    cy.wait(5000)
     cy.get(selectors.allContactsTab).eq(1).click();
     cy.wait(1000);
   }

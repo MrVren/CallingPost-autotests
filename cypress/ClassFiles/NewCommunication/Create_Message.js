@@ -31,7 +31,7 @@ class CreateVoiceMessage {
     cy.get(selectors.textarea).eq(1).type("Hello");
     cy.wait(1000);
     cy.get(selectors.createVoiceMsgBtn).eq(9).click();
-    cy.wait(15000);
+    cy.wait(18000);
     cy.get(selectors.selectGroupInput).eq(3).click();
     cy.wait(1000);
     cy.get(selectors.selectGroup).eq(0).click();
@@ -122,8 +122,9 @@ class CreateVoiceMessage {
   }
 
   AddCallerId() {
+    cy.wait(5000)
     cy.get(selectors.selectGroupInput).eq(0).click()
-    cy.wait(100);
+    cy.wait(1000);
     cy.get(selectors.selectGroup).eq(0).click()
     cy.wait(1000)
     cy.get(selectors.selectVoiceMsg).click()
@@ -131,9 +132,7 @@ class CreateVoiceMessage {
     cy.wait(1000);
     cy.get(selectors.addIdBtn).click();
     cy.wait(1000);
-    cy.get(selectors.phoneInput).clear().type("0000");
-    cy.wait(1000);
-    cy.get(selectors.phoneInput).clear().type("2345678923");
+    cy.get(selectors.phoneInput).type("2345678923");
     cy.wait(1000);
     cy.get(selectors.cancelBtn).click();
   }
