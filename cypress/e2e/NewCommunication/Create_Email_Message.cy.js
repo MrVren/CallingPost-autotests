@@ -6,7 +6,7 @@ import CreateMessage from "../../ClassFiles/NewCommunication/Create_Message";
 const Login = new LogIn();
 const EmailMessage = new CreateMessage();
 
-describe.skip("New Communication", () => {
+describe("New Communication", () => {
   it(
     "C170: Create Email Message",
      {

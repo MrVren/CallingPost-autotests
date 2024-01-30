@@ -87,7 +87,7 @@ describe("New Communication", () => {
     }
   );
 
-  it.skip(
+  it(
     "Schedule Message",
     {
       retries: {
@@ -100,6 +100,7 @@ describe("New Communication", () => {
       NewCommunication.OpenNewCommunication();
       NewCommunication.ViewMessages();
       NewCommunication.SelectMessage();
+      NewCommunication.SelectGroup();
       NewCommunication.ScheduleMessage();
       // what this test should do?
     }

@@ -49,7 +49,7 @@ class CreateMessage {
   CreateEmailMessage(
     name = `Test${Math.ceil(Math.random() * 999).toString()}`
   ) {
-    cy.wait(2000);
+    cy.wait(4000);
     cy.get(selectors.createNewMsgBtn).eq(0).click();
     cy.wait(3000);
     cy.get(selectors.messageName).clear().type(name);
@@ -96,7 +96,7 @@ class CreateMessage {
   }
 
   EditEmailMessage(name) {
-    cy.wait(2000);
+    cy.wait(4000);
     cy.get(selectors.messageTable)
       .children()
       .each((child) => {
@@ -162,7 +162,7 @@ class CreateMessage {
   }
 
   DeleteMessage() {
-    cy.wait(2000);
+    cy.wait(4000);
     cy.get(selectors.messageTable)
       .children()
       .each((child) => {

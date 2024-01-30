@@ -53,37 +53,16 @@ class CreateReminder {
 
   EditReminder() {
     cy.wait(1000);
-    cy.get(selectors.reminderTable)
+    cy.get('.mat-card').eq(0)
       .children()
-      .each((child) => {
-        if (
-          cy.get('.mat-card').contains(`Test${this.reminderTestId.toString()}`)
-          /*
-          child
-            .children()
-            .eq(1)
-            .children()
-            .eq(0)
-            .children()
-            .eq(0)
-            .children()
-            .eq(0)
-            .text()
-            .includes("Test")
-            */
+      .eq(1)
+      .children()
+      .eq(2)
+      .children()
+      .contains("Update")
+      .click();
 
-        ) {
-          cy.wrap(child)
-            .children()
-            .eq(1)
-            .children()
-            .eq(2)
-            .children()
-            .eq(0)
-            .click();
-          return false;
-        }
-      });
+
     cy.wait(1000);
     cy.get(selectors.reminderName).clear().type("Edited Reminder");
     cy.wait(1000);

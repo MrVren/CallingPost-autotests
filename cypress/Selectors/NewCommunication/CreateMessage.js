@@ -9,12 +9,12 @@ export default {
   cancelBtn: '.button[color="primary"]',
   addIdBtn: ".btn-create-caller-ids",
   phoneInput: 'input[formcontrolname="phoneNumber"]',
-  textarea: 'textarea[placeholder="Type your message here..."]',
+  textarea: 'textarea[formcontrolname="sMSMessage"]',
   checkbox: 'input[type="checkbox"]',
   viewMsgBtn: '.prior-message-selection',
   searchInput: '[id="mat-input-6"]',
   previewIcon: '#mat-dialog-0 > app-use-previous-dialog > div > div.message-container > div:nth-child(1) > div > app-message-preview > div > div > button',
   selectMessageBtn: 'button[color="primary"]',
   sendMessageBtn: "button.button--lime-green", // use eq 1
-  emailSubjectInput: 'input[placeholder="Enter Your Email Subject Here"]',
+  emailSubjectInput: 'input[formcontrolname="emailSubject"]',
 };

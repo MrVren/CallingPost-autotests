@@ -8,6 +8,7 @@ class CustomNumbers {
   }
 
   AddNewPhoneNumber() {
+    cy.wait(1000)
     cy.get(selectors.addPhoneNumber).click();
     cy.get(selectors.createTollFree).click();
     cy.wait(1000)
