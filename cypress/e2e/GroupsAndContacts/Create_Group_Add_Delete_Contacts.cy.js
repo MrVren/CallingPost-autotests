@@ -12,17 +12,6 @@ describe("Groups And Contacts", () => {
   });
   
   let name = `TestContacts${Math.ceil(Math.random() * 999).toString()}`;
-  before(() => {
-    cy.clearLocalStorage();
-  });
-
-  beforeEach(() => {
-    cy.restoreLocalStorage();
-  });
-
-  afterEach(() => {
-    cy.saveLocalStorage();
-  });
 
   it(
     "Create New Group",
@@ -48,6 +37,7 @@ describe("Groups And Contacts", () => {
       },
     },
     function () {
+      Login.ValidLogin();
       Login.OpenDashboard();
       GroupsAndContact.OpenGroups();
       GroupsAndContact.AddContacts();
@@ -63,6 +53,7 @@ describe("Groups And Contacts", () => {
       },
     },
     function () {
+      Login.ValidLogin();
       Login.OpenDashboard();
       GroupsAndContact.OpenGroups();
       GroupsAndContact.DeleteContact();

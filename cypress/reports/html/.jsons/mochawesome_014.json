@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2024-01-31T08:55:04.991Z",
-    "end": "2024-01-31T08:55:16.246Z",
-    "duration": 11255,
+    "start": "2024-01-31T15:26:25.266Z",
+    "end": "2024-01-31T15:26:39.553Z",
+    "duration": 14287,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,16 +18,16 @@
   },
   "results": [
     {
-      "uuid": "32364ba7-8a76-4ac8-b633-2feb6d0f36d8",
+      "uuid": "deb33708-3a28-40d1-a371-303397bbdbe3",
       "title": "",
-      "fullFile": "cypress\\e2e\\Footer\\HelpCenter.cy.js",
-      "file": "cypress\\e2e\\Footer\\HelpCenter.cy.js",
+      "fullFile": "cypress\\e2e\\Footer\\TermsOfService.cy.js",
+      "file": "cypress\\e2e\\Footer\\TermsOfService.cy.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "074d51df-c018-4a2e-a4d0-0bc7bf93484d",
+          "uuid": "0d1dfe40-008c-4580-a268-7c12482ad72d",
           "title": "Footer",
           "fullFile": "",
           "file": "",
@@ -35,32 +35,32 @@
           "afterHooks": [],
           "tests": [
             {
-              "title": "Help Center",
-              "fullTitle": "Footer Help Center",
+              "title": "Terms of service",
+              "fullTitle": "Footer Terms of service",
               "timedOut": null,
-              "duration": 11146,
+              "duration": 9240,
               "state": "passed",
-              "speed": "slow",
+              "speed": "medium",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "Login.ValidLogin();\nFooter.OpenHelpCenter();",
+              "code": "Login.ValidLogin();\nFooter.OpenTermsOfService();",
               "err": {},
-              "uuid": "c0299091-fff5-46f3-9ce8-15b2584feef0",
-              "parentUUID": "074d51df-c018-4a2e-a4d0-0bc7bf93484d",
+              "uuid": "22f3937c-76d3-4858-92bf-4a77820f6390",
+              "parentUUID": "0d1dfe40-008c-4580-a268-7c12482ad72d",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "c0299091-fff5-46f3-9ce8-15b2584feef0"
+            "22f3937c-76d3-4858-92bf-4a77820f6390"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 11146,
+          "duration": 9240,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

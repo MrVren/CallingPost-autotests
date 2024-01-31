@@ -11,18 +11,6 @@ describe("Account Overview", () => {
   Cypress.on("uncaught:exception", (err, runnable) => {
     return false;
   });
-  
-  before(() => {
-    cy.clearLocalStorage();
-  });
-
-  beforeEach(() => {
-    cy.restoreLocalStorage();
-  });
-
-  afterEach(() => {
-    cy.saveLocalStorage();
-  });
 
   it(
     "Open Premium Plan",
@@ -47,6 +35,7 @@ describe("Account Overview", () => {
       },
     },
     function () {
+      Login.ValidLogin();
       Login.OpenDashboard();
       Overview.OpenMyProfile();
     }
@@ -61,6 +50,7 @@ describe("Account Overview", () => {
       },
     },
     function () {
+      Login.ValidLogin();
       Login.OpenDashboard();
       Overview.OpenMySettings();
     }
@@ -75,6 +65,7 @@ describe("Account Overview", () => {
       },
     },
     function () {
+      Login.ValidLogin();
       Login.OpenDashboard();
       Overview.OpenMyBilling();
     }

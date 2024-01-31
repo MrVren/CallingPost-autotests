@@ -13,18 +13,6 @@ describe("Message Library", () => {
   
   let name = `Text01${Math.ceil(Math.random() * 999).toString()}`;
 
-  before("Login", () => {
-    cy.clearLocalStorage();
-  });
-
-  beforeEach(() => {
-    cy.restoreLocalStorage();
-  });
-
-  afterEach(() => {
-    cy.saveLocalStorage();
-  });
-
   it(
     "Create Text Message",
     {
@@ -49,6 +37,7 @@ describe("Message Library", () => {
       },
     },
     function () {
+      Login.ValidLogin();
       Login.OpenDashboard();
       Message.OpenMessageLibrary();
       Message.EditTextMessage(name);
@@ -64,6 +53,7 @@ describe("Message Library", () => {
       },
     },
     function () {
+      Login.ValidLogin();
       Login.OpenDashboard();
       Message.OpenMessageLibrary();
       Message.DeleteMessage();

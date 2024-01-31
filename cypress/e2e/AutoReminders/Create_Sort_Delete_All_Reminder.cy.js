@@ -10,18 +10,7 @@ describe("Auto Reminders", () => {
   Cypress.on("uncaught:exception", (err, runnable) => {
     return false;
   });
-  
-  before(() => {
-    cy.clearLocalStorage();
-  });
 
-  beforeEach(() => {
-    cy.restoreLocalStorage();
-  });
-
-  afterEach(() => {
-    cy.saveLocalStorage();
-  });
 
   it(
     "Create New Reminder",
@@ -49,6 +38,7 @@ describe("Auto Reminders", () => {
       },
     },
     function () {
+      Login.ValidLogin();
       Login.OpenDashboard();
       Reminder.OpenAutoReminders();
       Reminder.SortFilters();
@@ -64,6 +54,7 @@ describe("Auto Reminders", () => {
       },
     },
     function () {
+      Login.ValidLogin();
       Login.OpenDashboard();
       Reminder.OpenAutoReminders();
       Reminder.DeleteAllReminders();

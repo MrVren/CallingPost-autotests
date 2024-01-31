@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2024-01-31T08:56:13.071Z",
-    "end": "2024-01-31T08:56:23.414Z",
-    "duration": 10343,
+    "start": "2024-01-31T15:27:44.709Z",
+    "end": "2024-01-31T15:27:59.634Z",
+    "duration": 14925,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "23df7138-0eec-4af6-945b-5bd441fea646",
+      "uuid": "cdc52045-ab93-4777-9cfe-fa1e9f394ec6",
       "title": "",
       "fullFile": "cypress\\e2e\\ForgotUserId\\Incorrect_Email_Address.cy.js",
       "file": "cypress\\e2e\\ForgotUserId\\Incorrect_Email_Address.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "952f0144-8551-434c-891f-ee2dc27743b3",
+          "uuid": "f1a191d5-168f-4e6d-83e7-ff98aca670f6",
           "title": "Login",
           "fullFile": "",
           "file": "",
@@ -38,29 +38,29 @@
               "title": "Incorrect Email Address",
               "fullTitle": "Login Incorrect Email Address",
               "timedOut": null,
-              "duration": 10235,
+              "duration": 6856,
               "state": "passed",
-              "speed": "slow",
+              "speed": "medium",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
               "code": "Login.IncorrectRecoveryEmail();",
               "err": {},
-              "uuid": "c3cac1c1-2818-49e8-bbcd-fd1e453ce916",
-              "parentUUID": "952f0144-8551-434c-891f-ee2dc27743b3",
+              "uuid": "b81a38c0-01ae-49e2-824a-168e47c3d7cf",
+              "parentUUID": "f1a191d5-168f-4e6d-83e7-ff98aca670f6",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "c3cac1c1-2818-49e8-bbcd-fd1e453ce916"
+            "b81a38c0-01ae-49e2-824a-168e47c3d7cf"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 10235,
+          "duration": 6856,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

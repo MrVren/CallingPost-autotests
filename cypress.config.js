@@ -6,8 +6,8 @@ module.exports = defineConfig({
   chromeWebSecurity: false,
   reporter: 'cypress-mochawesome-reporter',
   e2e: {
-    baseUrl: 'https://test.callingpost.com',
-    //baseURL: 'https://apps.callingpost.com',
+    //baseUrl: 'https://test.callingpost.com',
+    baseURL: 'https://apps.callingpost.com',
     viewportHeight: 1080,
     viewportWidth: 1920,
     taskTimeout: 5000,

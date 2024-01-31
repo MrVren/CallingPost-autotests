@@ -10,18 +10,6 @@ describe("Groups And Contacts More Options", () => {
   Cypress.on("uncaught:exception", (err, runnable) => {
     return false;
   });
-
-  before(() => {
-    cy.clearLocalStorage();
-  });
-
-  beforeEach(() => {
-    cy.restoreLocalStorage();
-  });
-
-  afterEach(() => {
-    cy.saveLocalStorage();
-  });
   
   it(
     "Print",
@@ -48,6 +36,7 @@ describe("Groups And Contacts More Options", () => {
       },
     },
     function () {
+      Login.ValidLogin();
       Login.OpenDashboard();
       GroupsAndContact.OpenGroups();
       GroupsAndContact.SelectLastGroup();
@@ -64,6 +53,7 @@ describe("Groups And Contacts More Options", () => {
       },
     },
     function () {
+      Login.ValidLogin();
       Login.OpenDashboard();
       GroupsAndContact.OpenGroups();
       GroupsAndContact.SelectLastGroup();
@@ -80,6 +70,7 @@ describe("Groups And Contacts More Options", () => {
       },
     },
     function () {
+      Login.ValidLogin();
       Login.OpenDashboard();
       GroupsAndContact.OpenGroups();
       GroupsAndContact.SelectLastGroup();
@@ -96,6 +87,7 @@ describe("Groups And Contacts More Options", () => {
       },
     },
     function () {
+      Login.ValidLogin();
       Login.OpenDashboard();
       GroupsAndContact.OpenGroups();
       GroupsAndContact.SelectLastGroup();
@@ -112,6 +104,7 @@ describe("Groups And Contacts More Options", () => {
       },
     },
     function () {
+      Login.ValidLogin();
       Login.OpenDashboard();
       GroupsAndContact.OpenGroups();
       GroupsAndContact.SelectLastGroup();
@@ -128,6 +121,7 @@ describe("Groups And Contacts More Options", () => {
       },
     },
     function () {
+      Login.ValidLogin();
       Login.OpenDashboard();
       GroupsAndContact.OpenGroups();
       GroupsAndContact.SelectLastGroup();
@@ -144,6 +138,7 @@ describe("Groups And Contacts More Options", () => {
       },
     },
     function () {
+      Login.ValidLogin();
       Login.OpenDashboard();
       GroupsAndContact.OpenGroups();
       GroupsAndContact.SelectLastGroup();
@@ -160,6 +155,7 @@ describe("Groups And Contacts More Options", () => {
       },
     },
     function () {
+      Login.ValidLogin();
       Login.OpenDashboard();
       GroupsAndContact.OpenGroups();
       GroupsAndContact.SelectLastGroup();
@@ -176,6 +172,7 @@ describe("Groups And Contacts More Options", () => {
       },
     },
     function () {
+      Login.ValidLogin();
       Login.OpenDashboard();
       GroupsAndContact.OpenGroups();
       GroupsAndContact.SelectLastGroup();
@@ -192,6 +189,7 @@ describe("Groups And Contacts More Options", () => {
       },
     },
     function () {
+      Login.ValidLogin();
       Login.OpenDashboard();
       GroupsAndContact.OpenGroups();
       GroupsAndContact.SelectLastGroup();
@@ -208,6 +206,7 @@ describe("Groups And Contacts More Options", () => {
       },
     },
     function () {
+      Login.ValidLogin();
       Login.OpenDashboard();
       GroupsAndContact.OpenGroups();
       GroupsAndContact.DeleteGroup();

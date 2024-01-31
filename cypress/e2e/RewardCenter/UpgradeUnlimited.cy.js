@@ -21,7 +21,6 @@ describe("Reward Center", () => {
       Rewards.OpenUpgradeUnlimited();
       Rewards.SelectContacts();
       Rewards.CreditPricing();
-      // Rewards.UpgradePremium();
     }
   );
 });

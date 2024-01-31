@@ -10,18 +10,6 @@ describe("Message Library", () => {
   Cypress.on("uncaught:exception", (err, runnable) => {
     return false;
   });
-  
-  before("Login", () => {
-    cy.clearLocalStorage();
-  });
-
-  beforeEach(() => {
-    cy.restoreLocalStorage();
-  });
-
-  afterEach(() => {
-    cy.saveLocalStorage();
-  });
 
   it(
     "Sort Filter Message",
@@ -47,6 +35,7 @@ describe("Message Library", () => {
       },
     },
     function () {
+      Login.ValidLogin();
       Login.OpenDashboard();
       TextMessage.OpenMessageLibrary();
       TextMessage.FilterVoiceMessage();
@@ -62,6 +51,7 @@ describe("Message Library", () => {
       },
     },
     function () {
+      Login.ValidLogin();
       Login.OpenDashboard();
       TextMessage.OpenMessageLibrary();
       TextMessage.FilterTextMessage();
@@ -77,6 +67,7 @@ describe("Message Library", () => {
       },
     },
     function () {
+      Login.ValidLogin();
       Login.OpenDashboard();
       TextMessage.OpenMessageLibrary();
       TextMessage.FilterEmailMessage();

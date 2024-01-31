@@ -10,18 +10,6 @@ describe("New Communication", () => {
   Cypress.on("uncaught:exception", (err, runnable) => {
     return false;
   });
-  
-  before(() => {
-    cy.clearLocalStorage();
-  });
-
-  beforeEach(() => {
-    cy.restoreLocalStorage();
-  });
-
-  afterEach(() => {
-    cy.saveLocalStorage();
-  });
 
   it(
     "View Messages",
@@ -47,6 +35,7 @@ describe("New Communication", () => {
       },
     },
     function () {
+      Login.ValidLogin();
       Login.OpenDashboard();
       NewCommunication.OpenNewCommunication();
       NewCommunication.ViewMessages();
@@ -63,6 +52,7 @@ describe("New Communication", () => {
       },
     },
     function () {
+      Login.ValidLogin();
       Login.OpenDashboard();
       NewCommunication.OpenNewCommunication();
       NewCommunication.ViewMessages();
@@ -80,6 +70,7 @@ describe("New Communication", () => {
       },
     },
     function () {
+      Login.ValidLogin();
       Login.OpenDashboard();
       NewCommunication.OpenNewCommunication();
       NewCommunication.ViewMessages();
@@ -96,6 +87,7 @@ describe("New Communication", () => {
       },
     },
     function () {
+      Login.ValidLogin();
       Login.OpenDashboard();
       NewCommunication.OpenNewCommunication();
       NewCommunication.ViewMessages();

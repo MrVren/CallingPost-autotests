@@ -11,18 +11,6 @@ describe("Groups And Contacts", () => {
     return false;
   });
   
-  before(() => {
-    cy.clearLocalStorage();
-  });
-
-  beforeEach(() => {
-    cy.restoreLocalStorage();
-  });
-
-  afterEach(() => {
-    cy.saveLocalStorage();
-  });
-  
   it.skip(
     "Select Group / New Communication",
     {
@@ -48,6 +36,7 @@ describe("Groups And Contacts", () => {
       },
     },
     function () {
+      Login.ValidLogin();
       Login.OpenDashboard();
       GroupsAndContact.OpenGroups();
       GroupsAndContact.AddContact();
@@ -63,6 +52,7 @@ describe("Groups And Contacts", () => {
       },
     },
     function () {
+      Login.ValidLogin();
       Login.OpenDashboard();
       GroupsAndContact.OpenGroups();
       GroupsAndContact.FilterGroup()
@@ -78,6 +68,7 @@ describe("Groups And Contacts", () => {
       },
     },
     function () {
+      Login.ValidLogin();
       Login.OpenDashboard();
       GroupsAndContact.OpenGroups();
       GroupsAndContact.SelectGroup();
@@ -94,6 +85,7 @@ describe("Groups And Contacts", () => {
       },
     },
     function () {
+      Login.ValidLogin();
       Login.OpenDashboard();
       GroupsAndContact.OpenGroups();
       GroupsAndContact.SelectGroup();

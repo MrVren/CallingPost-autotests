@@ -11,18 +11,6 @@ describe("Settings", () => {
     return false;
   });
 
-  before(() => {
-    cy.clearLocalStorage();
-  });
-
-  beforeEach(() => {
-    cy.restoreLocalStorage();
-  });
-
-  afterEach(() => {
-    cy.saveLocalStorage();
-  });
-
   it(
     "Profile Icon",
     {
@@ -46,6 +34,7 @@ describe("Settings", () => {
       },
     },
     function () {
+      Login.ValidLogin();
       Login.OpenDashboard();
       Setting.OpenProfileSettings();
     }
@@ -60,6 +49,7 @@ describe("Settings", () => {
       },
     },
     function () {
+      Login.ValidLogin();
       Login.OpenDashboard();
       Setting.OpenBilling();
     }
@@ -74,6 +64,7 @@ describe("Settings", () => {
       },
     },
     function () {
+      Login.ValidLogin();
       Login.OpenDashboard();
       Setting.OpenCallIn();
     }
@@ -88,6 +79,7 @@ describe("Settings", () => {
       },
     },
     function () {
+      Login.ValidLogin();
       Login.OpenDashboard();
       Setting.OpenSystemSettings();
     }
@@ -102,6 +94,7 @@ describe("Settings", () => {
       },
     },
     function () {
+      Login.ValidLogin();
       Login.OpenDashboard();
       Setting.OpenPasswords();
       Setting.EnterPassword();
@@ -117,6 +110,7 @@ describe("Settings", () => {
       },
     },
     function () {
+      Login.ValidLogin();
       Login.OpenDashboard();
       Setting.OpenAccountManagers();
     }
@@ -131,6 +125,7 @@ describe("Settings", () => {
       },
     },
     function () {
+      Login.ValidLogin();
       Login.OpenDashboard();
       Setting.LogOut();
     }

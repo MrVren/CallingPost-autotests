@@ -19,7 +19,6 @@ describe("Reward Center", () => {
       Login.ValidLogin();
       Rewards.OpenRewardCenter();
       Rewards.OpenWeeklyCommunication();
-      // Rewards.SelectPlan();
       Rewards.RecentCommunications();
     }
   );

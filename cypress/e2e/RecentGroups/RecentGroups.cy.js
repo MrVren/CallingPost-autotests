@@ -10,18 +10,6 @@ describe("Recent Groups", () => {
   Cypress.on("uncaught:exception", (err, runnable) => {
     return false;
   });
-  
-  before(() => {
-    cy.clearLocalStorage();
-  });
-
-  beforeEach(() => {
-    cy.restoreLocalStorage();
-  });
-
-  afterEach(() => {
-    cy.saveLocalStorage();
-  });
 
   it(
     "Create New Group",
@@ -46,6 +34,7 @@ describe("Recent Groups", () => {
       },
     },
     function () {
+      Login.ValidLogin();
       Login.OpenDashboard();
       RecentGroup.SeeAllGroups();
     }
@@ -60,6 +49,7 @@ describe("Recent Groups", () => {
       },
     },
     function () {
+      Login.ValidLogin();
       Login.OpenDashboard();
       RecentGroup.OpenGroup();
     }

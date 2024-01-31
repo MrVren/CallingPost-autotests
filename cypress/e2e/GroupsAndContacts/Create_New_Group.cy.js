@@ -11,18 +11,6 @@ describe("Groups And Contacts", () => {
     return false;
   });
   
-  before(() => {
-    cy.clearLocalStorage();
-  });
-
-  beforeEach(() => {
-    cy.restoreLocalStorage();
-  });
-
-  afterEach(() => {
-    cy.saveLocalStorage();
-  });
-  
   it(
     "Create New Group Add Contacts Later",
     {
@@ -47,6 +35,7 @@ describe("Groups And Contacts", () => {
       },
     },
     function () {
+      Login.ValidLogin();
       Login.OpenDashboard();
       GroupsAndContact.OpenGroups();
       GroupsAndContact.CreateGroupAdd();

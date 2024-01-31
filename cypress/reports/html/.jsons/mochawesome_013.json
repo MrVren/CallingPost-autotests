@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2024-01-31T08:54:48.088Z",
-    "end": "2024-01-31T08:55:01.798Z",
-    "duration": 13710,
+    "start": "2024-01-31T15:26:08.792Z",
+    "end": "2024-01-31T15:26:22.942Z",
+    "duration": 14150,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,16 +18,16 @@
   },
   "results": [
     {
-      "uuid": "5674023b-1330-4e92-95e8-4508dd2f198a",
+      "uuid": "5ad70d68-49b2-4fec-82d6-c5f41122378c",
       "title": "",
-      "fullFile": "cypress\\e2e\\Footer\\Feedback.cy.js",
-      "file": "cypress\\e2e\\Footer\\Feedback.cy.js",
+      "fullFile": "cypress\\e2e\\Footer\\PrivacyPolicy.cy.js",
+      "file": "cypress\\e2e\\Footer\\PrivacyPolicy.cy.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "c7c3a293-2fd5-424e-8653-7390534f2b6d",
+          "uuid": "a9279edf-5176-4002-b3b1-9071169669db",
           "title": "Footer",
           "fullFile": "",
           "file": "",
@@ -35,32 +35,32 @@
           "afterHooks": [],
           "tests": [
             {
-              "title": "Feedback",
-              "fullTitle": "Footer Feedback",
+              "title": "Privacy Policy",
+              "fullTitle": "Footer Privacy Policy",
               "timedOut": null,
-              "duration": 13578,
+              "duration": 8861,
               "state": "passed",
-              "speed": "slow",
+              "speed": "medium",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "Login.ValidLogin();\nFooter.OpenFeedback();",
+              "code": "Login.ValidLogin();\nFooter.OpenPrivacyPolicy();",
               "err": {},
-              "uuid": "065454fe-5e68-4d8d-ad85-22f2fe3f8502",
-              "parentUUID": "c7c3a293-2fd5-424e-8653-7390534f2b6d",
+              "uuid": "fdfa5c58-a960-4ad3-ba7f-d481aded5564",
+              "parentUUID": "a9279edf-5176-4002-b3b1-9071169669db",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "065454fe-5e68-4d8d-ad85-22f2fe3f8502"
+            "fdfa5c58-a960-4ad3-ba7f-d481aded5564"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 13578,
+          "duration": 8861,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

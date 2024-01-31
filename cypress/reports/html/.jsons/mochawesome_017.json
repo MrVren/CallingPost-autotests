@@ -2,14 +2,14 @@
   "stats": {
     "suites": 1,
     "tests": 1,
-    "passes": 1,
+    "passes": 0,
     "pending": 0,
-    "failures": 0,
-    "start": "2024-01-31T08:55:46.795Z",
-    "end": "2024-01-31T08:55:57.188Z",
-    "duration": 10393,
+    "failures": 1,
+    "start": "2024-01-31T15:27:16.006Z",
+    "end": "2024-01-31T15:27:27.758Z",
+    "duration": 11752,
     "testsRegistered": 1,
-    "passPercent": 100,
+    "passPercent": 0,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "ad177b24-6d76-4884-8a6b-0f9ba56b4428",
+      "uuid": "fe1595b8-214f-446f-8060-4a597071a8f9",
       "title": "",
       "fullFile": "cypress\\e2e\\ForgotUserId\\Cancel_Request_User_Id.cy.js",
       "file": "cypress\\e2e\\ForgotUserId\\Cancel_Request_User_Id.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "54ed0a6a-6750-4948-909f-37c3337bef99",
+          "uuid": "acbdb23a-2185-404c-8763-432cfedd52d0",
           "title": "Login",
           "fullFile": "",
           "file": "",
@@ -38,29 +38,33 @@
               "title": "Cancel Request UserId",
               "fullTitle": "Login Cancel Request UserId",
               "timedOut": null,
-              "duration": 10268,
-              "state": "passed",
-              "speed": "slow",
-              "pass": true,
-              "fail": false,
+              "duration": 9537,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
               "pending": false,
-              "context": null,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\ForgotUserId\\\\Cancel_Request_User_Id.cy.js\\\\Login -- Cancel Request UserId (failed).png\"\n    ]\n  ]\n}",
               "code": "Login.CancelRequest();",
-              "err": {},
-              "uuid": "6a8b97b5-366f-4589-a65d-5db295727884",
-              "parentUUID": "54ed0a6a-6750-4948-909f-37c3337bef99",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: expected 'https://apps.callingpost.com/login' to equal 'https://test.callingpost.com/login'",
+                "estack": "AssertionError: Timed out retrying after 4000ms: expected 'https://apps.callingpost.com/login' to equal 'https://test.callingpost.com/login'\n    at ForgotUserId.CancelRequest (webpack://calling-post-automation/./cypress/ClassFiles/Login/Forgot_User_Id.js:39:13)\n    at Context.eval (webpack://calling-post-automation/./cypress/e2e/ForgotUserId/Cancel_Request_User_Id.cy.js:21:12)",
+                "diff": "- 'https://apps.callingpost.com/login'\n+ 'https://test.callingpost.com/login'\n"
+              },
+              "uuid": "9d0305d4-8adb-4ea1-aa96-46dee5d9ff2b",
+              "parentUUID": "acbdb23a-2185-404c-8763-432cfedd52d0",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
-          "passes": [
-            "6a8b97b5-366f-4589-a65d-5db295727884"
+          "passes": [],
+          "failures": [
+            "9d0305d4-8adb-4ea1-aa96-46dee5d9ff2b"
           ],
-          "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 10268,
+          "duration": 9537,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

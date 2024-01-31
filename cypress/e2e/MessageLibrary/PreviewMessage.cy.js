@@ -10,18 +10,6 @@ describe("Message Library", () => {
   Cypress.on("uncaught:exception", (err, runnable) => {
     return false;
   });
-  
-  before("Login", () => {
-    cy.clearLocalStorage();
-  });
-
-  beforeEach(() => {
-    cy.restoreLocalStorage();
-  });
-
-  afterEach(() => {
-    cy.saveLocalStorage();
-  });
 
   it(
     "Preview Text Message",
@@ -47,6 +35,7 @@ describe("Message Library", () => {
       },
     },
     function () {
+      Login.ValidLogin();
       Login.OpenDashboard();
       TextMessage.OpenMessageLibrary();
       TextMessage.PreviewEmailMessage();
@@ -62,6 +51,7 @@ describe("Message Library", () => {
       },
     },
     function () {
+      Login.ValidLogin();
       Login.OpenDashboard();
       TextMessage.OpenMessageLibrary();
       TextMessage.PreviewVoiceMessage();

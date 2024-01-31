@@ -13,19 +13,6 @@ describe("Message Library", () => {
   
   let name = `Voice01${Math.ceil(Math.random() * 999).toString()}`;
 
-  before("Login", () => {
-    cy.clearLocalStorage();
-    Login.ValidLogin();
-  });
-
-  beforeEach(() => {
-    cy.restoreLocalStorage();
-  });
-
-  afterEach(() => {
-    cy.saveLocalStorage();
-  });
-
   it(
     "Create Voice Message",
     {
@@ -35,6 +22,7 @@ describe("Message Library", () => {
       },
     },
     function () {
+      Login.ValidLogin();
       Message.OpenMessageLibrary();
       Message.CreateVoiceMsg(name);
     }
@@ -49,6 +37,7 @@ describe("Message Library", () => {
       },
     },
     function () {
+      Login.ValidLogin();
       Login.OpenDashboard();
       Message.OpenMessageLibrary();
       Message.EditVoiceMessage(name);
@@ -64,6 +53,7 @@ describe("Message Library", () => {
       },
     },
     function () {
+      Login.ValidLogin();
       Login.OpenDashboard();
       Message.OpenMessageLibrary();
       Message.DeleteMessage();

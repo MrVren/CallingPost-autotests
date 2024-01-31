@@ -10,18 +10,6 @@ describe("Recent Communications", () => {
   Cypress.on("uncaught:exception", (err, runnable) => {
     return false;
   });
-  
-  before(() => {
-    cy.clearLocalStorage();
-  });
-
-  beforeEach(() => {
-    cy.restoreLocalStorage();
-  });
-
-  afterEach(() => {
-    cy.saveLocalStorage();
-  });
 
   it(
     "Open Create New Communication Page",
@@ -46,6 +34,7 @@ describe("Recent Communications", () => {
       },
     },
     function () {
+      Login.ValidLogin();
       Login.OpenDashboard();
       RecentCommunication.SeeAllCommunications();
     }
@@ -60,6 +49,7 @@ describe("Recent Communications", () => {
       },
     },
     function () {
+      Login.ValidLogin();
       Login.OpenDashboard();
       RecentCommunication.OpenGetCredit();
       RecentCommunication.EnterEmail();
@@ -76,6 +66,7 @@ describe("Recent Communications", () => {
       },
     },
     function () {
+      Login.ValidLogin();
       Login.OpenDashboard();
       RecentCommunication.OpenEarnRewards();
     }
@@ -90,6 +81,7 @@ describe("Recent Communications", () => {
       },
     },
     function () {
+      Login.ValidLogin();
       Login.OpenDashboard();
       RecentCommunication.GetPdfGuide();
     }
@@ -104,6 +96,7 @@ describe("Recent Communications", () => {
       },
     },
     function () {
+      Login.ValidLogin();
       Login.OpenDashboard();
       RecentCommunication.DownloadApp();
     }
@@ -118,6 +111,7 @@ describe("Recent Communications", () => {
       },
     },
     function () {
+      Login.ValidLogin();
       Login.OpenDashboard();
       RecentCommunication.OpenCommunicationDetails();
     }

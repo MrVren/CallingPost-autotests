@@ -10,18 +10,6 @@ describe("Reward Center", () => {
   Cypress.on("uncaught:exception", (err, runnable) => {
     return false;
   });
-  
-  before(() => {
-    cy.clearLocalStorage();
-  });
-
-  beforeEach(() => {
-    cy.restoreLocalStorage();
-  });
-
-  afterEach(() => {
-    cy.saveLocalStorage();
-  });
 
   it(
     "Refer Email",
@@ -48,6 +36,7 @@ describe("Reward Center", () => {
       },
     },
     function () {
+      Login.ValidLogin();
       Login.OpenDashboard();
       Rewards.OpenGet$50();
       Rewards.EnterMultipleEmails();

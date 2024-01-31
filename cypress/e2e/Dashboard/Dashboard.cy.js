@@ -7,17 +7,6 @@ const Login = new LogIn();
 const Dashboard = new Dashboards();
 
 describe("Dashboard", () => {
-  before("Login", () => {
-    cy.clearLocalStorage();
-  });
-
-  beforeEach(() => {
-    cy.restoreLocalStorage();
-  });
-
-  afterEach(() => {
-    cy.saveLocalStorage();
-  });
 
   it(
     "C157: Left Menu",
@@ -43,6 +32,7 @@ describe("Dashboard", () => {
       },
     },
     function () {
+      Login.ValidLogin();
       Login.OpenDashboard();
       Dashboard.OpenNotifications();
     }
@@ -57,6 +47,7 @@ describe("Dashboard", () => {
       },
     },
     function () {
+      Login.ValidLogin();
       Login.OpenDashboard();
       Dashboard.OpenProfileSettings();
     }
@@ -71,25 +62,11 @@ describe("Dashboard", () => {
       },
     },
     function () {
+      Login.ValidLogin();
       Login.OpenDashboard();
       Dashboard.OpenSystemSettings();
     }
   );
-
- /*it(
-    "Password/Login",
-    {
-      retries: {
-        runMode: 2,
-        openMode: 2,
-      },
-    },
-    function () {
-      Login.OpenDashboard();
-      Dashboard.OpenPasswords();
-      Dashboard.EnterPassword();
-    }
-  );*/
 
   it(
     "C161: Account Managers",
@@ -100,6 +77,7 @@ describe("Dashboard", () => {
       },
     },
     function () {
+      Login.ValidLogin();
       Login.OpenDashboard();
       Dashboard.OpenAccountManagers();
     }

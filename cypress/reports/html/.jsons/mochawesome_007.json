@@ -2,14 +2,14 @@
   "stats": {
     "suites": 1,
     "tests": 1,
-    "passes": 1,
+    "passes": 0,
     "pending": 0,
-    "failures": 0,
-    "start": "2024-01-31T08:52:14.335Z",
-    "end": "2024-01-31T08:52:40.409Z",
-    "duration": 26074,
+    "failures": 1,
+    "start": "2024-01-31T15:23:11.979Z",
+    "end": "2024-01-31T15:23:35.048Z",
+    "duration": 23069,
     "testsRegistered": 1,
-    "passPercent": 100,
+    "passPercent": 0,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,16 +18,16 @@
   },
   "results": [
     {
-      "uuid": "96cbfc12-beff-44e7-9fd5-13947dd6dad6",
+      "uuid": "12919a44-1a1d-4450-83ba-c12ab0da5630",
       "title": "",
-      "fullFile": "cypress\\e2e\\CustomPhoneNumber\\CustomPhoneNumber.cy.js",
-      "file": "cypress\\e2e\\CustomPhoneNumber\\CustomPhoneNumber.cy.js",
+      "fullFile": "cypress\\e2e\\CustomPhoneNumber\\Discount.cy.js",
+      "file": "cypress\\e2e\\CustomPhoneNumber\\Discount.cy.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "e1cf9464-55d7-459d-a2fa-fad88ccd29ee",
+          "uuid": "91b1637b-5e0a-46b3-97f7-f0e52ccd3a85",
           "title": "Custom Phone Number",
           "fullFile": "",
           "file": "",
@@ -35,32 +35,36 @@
           "afterHooks": [],
           "tests": [
             {
-              "title": "Custom Phone Number",
-              "fullTitle": "Custom Phone Number Custom Phone Number",
+              "title": "Discounts",
+              "fullTitle": "Custom Phone Number Discounts",
               "timedOut": null,
-              "duration": 25924,
-              "state": "passed",
-              "speed": "slow",
-              "pass": true,
-              "fail": false,
+              "duration": 17679,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
               "pending": false,
-              "context": null,
-              "code": "Login.ValidLogin();\nCustomNumber.OpenCustomNumbers();\nCustomNumber.AddNewPhoneNumber();\nCustomNumber.CreateVanityNumber();\nCustomNumber.SearchVanity();\nCustomNumber.HideVanityNumber();\nCustomNumber.ViewMoreOptions();\nCustomNumber.SelectPreferredNumber();\nCustomNumber.SelectDiscount();\nCustomNumber.SelectPayment();\nCustomNumber.CompletePurchase();\nCustomNumber.DeleteTestNumber();",
-              "err": {},
-              "uuid": "0535952c-79d8-4f25-8ff0-03e46203bc96",
-              "parentUUID": "e1cf9464-55d7-459d-a2fa-fad88ccd29ee",
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\CustomPhoneNumber\\\\Discount.cy.js\\\\Custom Phone Number -- Discounts (failed).png\"\n    ]\n  ]\n}",
+              "code": "Login.ValidLogin();\nCustomNumber.OpenCustomNumbers();\nCustomNumber.AddNewPhoneNumber();\nCustomNumber.SelectPreferredNumber();\nCustomNumber.SelectDiscounts();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.phone-list-wrapper > :nth-child(1)`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.phone-list-wrapper > :nth-child(1)`, but never found it.\n    at CustomNumbers.SelectPreferredNumber (webpack://calling-post-automation/./cypress/ClassFiles/CustomPhoneNumber/CustomPhoneNumber.js:37:7)\n    at Context.eval (webpack://calling-post-automation/./cypress/e2e/CustomPhoneNumber/Discount.cy.js:26:19)",
+                "diff": null
+              },
+              "uuid": "5e64eed4-0809-4f52-bc9c-965a6812d5b9",
+              "parentUUID": "91b1637b-5e0a-46b3-97f7-f0e52ccd3a85",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
-          "passes": [
-            "0535952c-79d8-4f25-8ff0-03e46203bc96"
+          "passes": [],
+          "failures": [
+            "5e64eed4-0809-4f52-bc9c-965a6812d5b9"
           ],
-          "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 25924,
+          "duration": 17679,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

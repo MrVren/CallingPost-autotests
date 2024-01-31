@@ -10,18 +10,6 @@ describe("Billing And Payments", () => {
   Cypress.on("uncaught:exception", (err, runnable) => {
     return false;
   });
-  
-  before(() => {
-    cy.clearLocalStorage();
-  });
-
-  beforeEach(() => {
-    cy.restoreLocalStorage();
-  });
-
-  afterEach(() => {
-    cy.saveLocalStorage();
-  });
 
   it(
     "Add Bank Account",
@@ -47,6 +35,7 @@ describe("Billing And Payments", () => {
       },
     },
     function () {
+      Login.ValidLogin();
       Login.OpenDashboard();
       Billing.OpenBilling();
       Billing.AddNewPaymentMethod();
@@ -62,6 +51,7 @@ describe("Billing And Payments", () => {
       },
     },
     function () {
+      Login.ValidLogin();
       Login.OpenDashboard();
       Billing.OpenBilling();
       Billing.UpdatePaymentMethod();
@@ -77,6 +67,7 @@ describe("Billing And Payments", () => {
       },
     },
     function () {
+      Login.ValidLogin();
       Login.OpenDashboard();
       Billing.OpenBilling();
       Billing.DeletePaymentMethod();
@@ -92,6 +83,7 @@ describe("Billing And Payments", () => {
       },
     },
     function () {
+      Login.ValidLogin();
       Login.OpenDashboard();
       Billing.OpenBilling();
       Billing.ViewBillingHistory();
@@ -109,6 +101,7 @@ describe("Billing And Payments", () => {
       },
     },
     function () {
+      Login.ValidLogin();
       Login.OpenDashboard();
       Billing.OpenBilling();
       Billing.ChangePlan();
