@@ -1,0 +1,109 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2024-01-31T11:58:24.202Z",
+    "end": "2024-01-31T11:59:07.483Z",
+    "duration": 43281,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "8a2cbbef-6fd4-48d4-9971-2e2df06d0026",
+      "title": "",
+      "fullFile": "cypress\\e2e\\AccountManagers\\AccountManagers.cy.js",
+      "file": "cypress\\e2e\\AccountManagers\\AccountManagers.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "68e4086a-9d43-40c9-84e7-2d0fe6773b19",
+          "title": "Account Managers",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Edit Account Managers",
+              "fullTitle": "Account Managers Edit Account Managers",
+              "timedOut": null,
+              "duration": 43102,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\AccountManagers\\\\AccountManagers.cy.js\\\\Account Managers -- Edit Account Managers (failed).png\"\n    ]\n  ]\n}",
+              "code": "Login.ValidLogin();\nAccountsManager.OpenAccountManagers();\nAccountsManager.WithoutEmailInvite();\nAccountsManager.CancelSetting();\nAccountsManager.InviteAccountManager();\nAccountsManager.CancelInvite();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `button.mat-focus-indicator.mat-icon-button.mat-button-base`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `button.mat-focus-indicator.mat-icon-button.mat-button-base`, but never found it.\n    at AccountManager.OpenAccountManagers (webpack://calling-post-automation/./cypress/ClassFiles/AccountManagers/AccountManagers.js:8:7)\n    at Context.eval (webpack://calling-post-automation/./cypress/e2e/AccountManagers/AccountManagers.cy.js:24:22)",
+                "diff": null
+              },
+              "uuid": "48fd84e0-2476-4e84-b0d8-85c03548d1de",
+              "parentUUID": "68e4086a-9d43-40c9-84e7-2d0fe6773b19",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "48fd84e0-2476-4e84-b0d8-85c03548d1de"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 43102,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

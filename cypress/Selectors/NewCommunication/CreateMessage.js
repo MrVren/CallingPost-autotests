@@ -17,4 +17,5 @@ export default {
   selectMessageBtn: 'button[color="primary"]',
   sendMessageBtn: "button.button--lime-green", // use eq 1
   emailSubjectInput: 'input[formcontrolname="emailSubject"]',
+  snackBar: ".toast > .typography-16",
 };

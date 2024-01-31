@@ -15,14 +15,14 @@ class GroupsAndContacts {
     cy.wait(5000)
     cy.get(selectors.createGroupBtn).click();
     cy.get(selectors.groupNameInput)
-      .type(`KristenTest${Math.ceil(Math.random() * 999).toString()}`);
+      .type(`KristenTest${Math.ceil(Math.random() * 999999).toString()}`);
     cy.get(selectors.selectGroupInput).eq(1).click();
     cy.get(selectors.selectGroup).eq(0).click();
     cy.get(selectors.saveGrpBtn).eq(0).click();
     cy.get(selectors.snackBar).should("have.text", " Group created successfully ")
   }
 
-  CreateGroupAdd(name = `KristenTest${Math.ceil(Math.random() * 999).toString()}`) {
+  CreateGroupAdd(name = `KristenTest${Math.ceil(Math.random() * 999999).toString()}`) {
     cy.wait(1000);
     cy.get(selectors.createGroupBtn).click();
     cy.wait(1000);
@@ -253,7 +253,7 @@ class GroupsAndContacts {
     cy.get(selectors.moreOptionsBtn).click();
     cy.wait(1000);
     cy.get(selectors.menuOptions).eq(6).click();
-    cy.wait(1000);
+    cy.wait(2000);
     cy.get('#mat-menu-panel-4 > .mat-menu-content > :nth-child(2)').click()
     cy.get(selectors.confirmDel).click();
     cy.wait(2000);
@@ -264,7 +264,7 @@ class GroupsAndContacts {
     cy.get(selectors.moreOptionsBtn).click();
     cy.wait(1000);
     cy.get(selectors.menuOptions).eq(6).click();
-    cy.wait(1000);
+    cy.wait(2000);
     cy.get('#mat-menu-panel-4 > .mat-menu-content > :nth-child(1)').click()
     cy.get(selectors.confirmDel).click();
     cy.wait(2000);
@@ -317,8 +317,8 @@ class GroupsAndContacts {
     cy.get(selectors.addManuallyOption).eq(0).click();
     cy.wait(500)
     //cy.get(selectors.selectFilterOption).eq(0).click();
-    cy.get(selectors.addManuallyInputs).eq(1).type(`Kristen${Math.ceil(Math.random() * 999).toString()}`);
-    cy.get(selectors.addManuallyInputs).eq(2).type(`Test${Math.ceil(Math.random() * 999).toString()}`);
+    cy.get(selectors.addManuallyInputs).eq(1).type(`Kristen${Math.ceil(Math.random() * 999999).toString()}`);
+    cy.get(selectors.addManuallyInputs).eq(2).type(`Test${Math.ceil(Math.random() * 999999).toString()}`);
     cy.get(selectors.addManuallyInputs).eq(3).type('3214567865');
     cy.get(selectors.addManuallyInputs).eq(4).type('test@gmail.com');
     cy.get(selectors.saveEditName).click();

@@ -1,0 +1,129 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 1,
+    "pending": 0,
+    "failures": 1,
+    "start": "2024-01-31T13:58:28.578Z",
+    "end": "2024-01-31T13:58:52.875Z",
+    "duration": 24297,
+    "testsRegistered": 2,
+    "passPercent": 50,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "899c3910-3074-4031-8f72-7643b2262efb",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Get$50\\Get$50.cy.js",
+      "file": "cypress\\e2e\\Get$50\\Get$50.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "715de25a-b5c0-4d1c-88c4-272eb2c4df9c",
+          "title": "Reward Center",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Refer Email",
+              "fullTitle": "Reward Center Refer Email",
+              "timedOut": null,
+              "duration": 12414,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Login.ValidLogin();\nRewards.OpenGet$50();\nRewards.EnterEmail();\nRewards.SendEmail();",
+              "err": {},
+              "uuid": "2b82f3cc-e0cf-4a95-b786-c05de917fac4",
+              "parentUUID": "715de25a-b5c0-4d1c-88c4-272eb2c4df9c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Refer Multiple Emails",
+              "fullTitle": "Reward Center Refer Multiple Emails",
+              "timedOut": null,
+              "duration": 11405,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\Get$50\\\\Get$50.cy.js\\\\Reward Center -- Refer Multiple Emails (failed).png\"\n    ]\n  ]\n}",
+              "code": "Login.OpenDashboard();\nRewards.OpenGet$50();\nRewards.EnterMultipleEmails();\nRewards.SendEmail();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `app-menu-item`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `app-menu-item`, but never found it.\n    at Get$50.OpenGet$50 (webpack://calling-post-automation/./cypress/ClassFiles/Get$50/Get$50.js:7:7)\n    at Context.eval (webpack://calling-post-automation/./cypress/e2e/Get$50/Get$50.cy.js:52:14)",
+                "diff": null
+              },
+              "uuid": "01b2280d-dc5e-4fe5-85c7-a4d169298076",
+              "parentUUID": "715de25a-b5c0-4d1c-88c4-272eb2c4df9c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "2b82f3cc-e0cf-4a95-b786-c05de917fac4"
+          ],
+          "failures": [
+            "01b2280d-dc5e-4fe5-85c7-a4d169298076"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 23819,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

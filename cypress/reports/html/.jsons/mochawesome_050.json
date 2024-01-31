@@ -1,0 +1,109 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2024-01-31T09:38:08.163Z",
+    "end": "2024-01-31T09:38:55.646Z",
+    "duration": 47483,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "387bba1a-1ee9-446c-be74-911aa66b16f6",
+      "title": "",
+      "fullFile": "cypress\\e2e\\MessageLibrary\\SendMessage.cy.js",
+      "file": "cypress\\e2e\\MessageLibrary\\SendMessage.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "2c1246b9-dd3b-4aa4-9f67-dfb6b542f538",
+          "title": "Message Library",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Send Message",
+              "fullTitle": "Message Library Send Message",
+              "timedOut": null,
+              "duration": 46872,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\MessageLibrary\\\\SendMessage.cy.js\\\\Message Library -- Send Message (failed).png\"\n    ]\n  ]\n}",
+              "code": "Login.ValidLogin();\nTextMessage.OpenMessageLibrary();\nTextMessage.SendMessage();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.button--lime-green`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.button--lime-green`, but never found it.\n    at CreateMessage.SendMessage (webpack://calling-post-automation/./cypress/ClassFiles/MessageLibrary/Message_Library.js:369:7)\n    at Context.eval (webpack://calling-post-automation/./cypress/e2e/MessageLibrary/SendMessage.cy.js:25:18)",
+                "diff": null
+              },
+              "uuid": "b2dde613-6b06-4473-80ff-2205bf87da54",
+              "parentUUID": "2c1246b9-dd3b-4aa4-9f67-dfb6b542f538",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "b2dde613-6b06-4473-80ff-2205bf87da54"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 46872,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

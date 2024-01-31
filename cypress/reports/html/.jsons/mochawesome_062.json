@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-01-31T09:52:45.771Z",
+    "end": "2024-01-31T09:53:10.044Z",
+    "duration": 24273,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "2895da6c-d74c-46d4-b4f9-30e08cfce35f",
+      "title": "",
+      "fullFile": "cypress\\e2e\\RewardCenter\\WeeklyCommunication.cy.js",
+      "file": "cypress\\e2e\\RewardCenter\\WeeklyCommunication.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "3738ae27-65e7-4a75-a6b7-f715b953f6e9",
+          "title": "Reward Center",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "C151: Weekly Communications",
+              "fullTitle": "Reward Center C151: Weekly Communications",
+              "timedOut": null,
+              "duration": 24061,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Login.ValidLogin();\nRewards.OpenRewardCenter();\nRewards.OpenWeeklyCommunication();\n// Rewards.SelectPlan();\nRewards.RecentCommunications();",
+              "err": {},
+              "uuid": "64c186d7-1ee6-40cc-9cf1-04b4c6bd51d8",
+              "parentUUID": "3738ae27-65e7-4a75-a6b7-f715b953f6e9",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "64c186d7-1ee6-40cc-9cf1-04b4c6bd51d8"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 24061,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

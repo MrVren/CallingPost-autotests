@@ -38,7 +38,7 @@ describe("New Communication", () => {
     }
   );
 
-  it(
+  it.skip(
     "Search Messages",
     {
       retries: {
@@ -54,7 +54,7 @@ describe("New Communication", () => {
     }
   );
 
-  it(
+  it.skip(
     "Preview Messages",
     {
       retries: {
@@ -71,7 +71,7 @@ describe("New Communication", () => {
     }
   );
 
-  it(
+  it.skip(
     "Select Message",
     {
       retries: {

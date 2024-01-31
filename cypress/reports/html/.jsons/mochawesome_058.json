@@ -1,0 +1,219 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 7,
+    "passes": 7,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-01-31T09:48:36.202Z",
+    "end": "2024-01-31T09:50:19.158Z",
+    "duration": 102956,
+    "testsRegistered": 7,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "1d7c2d05-d199-4556-b8ce-4951ce9a18ee",
+      "title": "",
+      "fullFile": "cypress\\e2e\\RecentCommunications\\RecentCommunications.cy.js",
+      "file": "cypress\\e2e\\RecentCommunications\\RecentCommunications.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "2aecb31c-b35b-49bd-8f09-703f199d4cd4",
+          "title": "Recent Communications",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Open Create New Communication Page",
+              "fullTitle": "Recent Communications Open Create New Communication Page",
+              "timedOut": null,
+              "duration": 27071,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Login.ValidLogin();\nRecentCommunication.OpenCreateNewPage();",
+              "err": {},
+              "uuid": "d9e5eefa-f0a0-4664-a62f-04f2cc46ddc1",
+              "parentUUID": "2aecb31c-b35b-49bd-8f09-703f199d4cd4",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "See All Communications",
+              "fullTitle": "Recent Communications See All Communications",
+              "timedOut": null,
+              "duration": 26827,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Login.OpenDashboard();\nRecentCommunication.SeeAllCommunications();",
+              "err": {},
+              "uuid": "5db5a5b6-b507-47cc-9f1c-80d583fd948f",
+              "parentUUID": "2aecb31c-b35b-49bd-8f09-703f199d4cd4",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Get $50 Credit",
+              "fullTitle": "Recent Communications Get $50 Credit",
+              "timedOut": null,
+              "duration": 13734,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Login.OpenDashboard();\nRecentCommunication.OpenGetCredit();\nRecentCommunication.EnterEmail();\nRecentCommunication.SendEmail();",
+              "err": {},
+              "uuid": "615061a7-60c9-4070-b6f6-eaa4c7155029",
+              "parentUUID": "2aecb31c-b35b-49bd-8f09-703f199d4cd4",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Earn Rewards",
+              "fullTitle": "Recent Communications Earn Rewards",
+              "timedOut": null,
+              "duration": 8382,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Login.OpenDashboard();\nRecentCommunication.OpenEarnRewards();",
+              "err": {},
+              "uuid": "894bca64-e4c2-4815-917f-b1c7f77b3027",
+              "parentUUID": "2aecb31c-b35b-49bd-8f09-703f199d4cd4",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "PDF Guide",
+              "fullTitle": "Recent Communications PDF Guide",
+              "timedOut": null,
+              "duration": 7654,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Login.OpenDashboard();\nRecentCommunication.GetPdfGuide();",
+              "err": {},
+              "uuid": "a11988b9-d62e-46ce-8a3c-ddb03671d8ce",
+              "parentUUID": "2aecb31c-b35b-49bd-8f09-703f199d4cd4",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Download App",
+              "fullTitle": "Recent Communications Download App",
+              "timedOut": null,
+              "duration": 8167,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Login.OpenDashboard();\nRecentCommunication.DownloadApp();",
+              "err": {},
+              "uuid": "9a884331-7f4f-4a1e-99ed-5331981e30f4",
+              "parentUUID": "2aecb31c-b35b-49bd-8f09-703f199d4cd4",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Communication Detail Page",
+              "fullTitle": "Recent Communications Communication Detail Page",
+              "timedOut": null,
+              "duration": 7273,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Login.OpenDashboard();\nRecentCommunication.OpenCommunicationDetails();",
+              "err": {},
+              "uuid": "c24c0526-d361-4c33-af0e-f431cb1fa449",
+              "parentUUID": "2aecb31c-b35b-49bd-8f09-703f199d4cd4",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "d9e5eefa-f0a0-4664-a62f-04f2cc46ddc1",
+            "5db5a5b6-b507-47cc-9f1c-80d583fd948f",
+            "615061a7-60c9-4070-b6f6-eaa4c7155029",
+            "894bca64-e4c2-4815-917f-b1c7f77b3027",
+            "a11988b9-d62e-46ce-8a3c-ddb03671d8ce",
+            "9a884331-7f4f-4a1e-99ed-5331981e30f4",
+            "c24c0526-d361-4c33-af0e-f431cb1fa449"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 99108,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

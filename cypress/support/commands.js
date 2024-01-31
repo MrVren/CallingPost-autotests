@@ -38,7 +38,7 @@ Cypress.Commands.add("LoginWithSessionStore", (email, passwd, url) => {
     cy.get(selectors.usernameInput).clear().type(email);
     cy.get(selectors.passwordInput).clear().type(passwd);
     cy.get(selectors.loginBtn).click();
-    cy.wait(2000)
+    cy.wait(5000)
   },
   {
     cacheAcrossSpecs: true

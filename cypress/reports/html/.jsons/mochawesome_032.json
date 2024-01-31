@@ -1,0 +1,198 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 0,
+    "pending": 1,
+    "failures": 3,
+    "start": "2024-01-31T09:22:34.713Z",
+    "end": "2024-01-31T09:23:27.564Z",
+    "duration": 52851,
+    "testsRegistered": 5,
+    "passPercent": 0,
+    "pendingPercent": 20,
+    "other": 1,
+    "hasOther": true,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "340ad243-bc62-496b-a143-9fa79a34d1f2",
+      "title": "",
+      "fullFile": "cypress\\e2e\\GroupsAndContacts\\SelectGroupName.cy.js",
+      "file": "cypress\\e2e\\GroupsAndContacts\\SelectGroupName.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "42296073-656e-47a6-a676-28c0c6863bbf",
+          "title": "Groups And Contacts",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Select Group / New Communication",
+              "fullTitle": "Groups And Contacts Select Group / New Communication",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "Login.ValidLogin();\nGroupsAndContact.OpenGroups();\nGroupsAndContact.SelectGroup();\nGroupsAndContact.NewCommunication();",
+              "err": {},
+              "uuid": "30941338-32b4-4530-9ea6-b1f46f9457b4",
+              "parentUUID": "42296073-656e-47a6-a676-28c0c6863bbf",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Add Contact",
+              "fullTitle": "Groups And Contacts Add Contact",
+              "timedOut": null,
+              "duration": 20648,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\GroupsAndContacts\\\\SelectGroupName.cy.js\\\\Groups And Contacts -- Add Contact (failed).png\"\n    ]\n  ]\n}",
+              "code": "Login.OpenDashboard();\nGroupsAndContact.OpenGroups();\nGroupsAndContact.AddContact();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.sidenav-wrapper > :nth-child(1) > :nth-child(4) > .mat-focus-indicator`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.sidenav-wrapper > :nth-child(1) > :nth-child(4) > .mat-focus-indicator`, but never found it.\n    at GroupsAndContacts.OpenGroups (webpack://calling-post-automation/./cypress/ClassFiles/GroupsAndContacts/Add_New_group.js:7:7)\n    at Context.eval (webpack://calling-post-automation/./cypress/e2e/GroupsAndContacts/SelectGroupName.cy.js:52:23)",
+                "diff": null
+              },
+              "uuid": "cd014f8c-51fa-4197-9f28-5e856978ea27",
+              "parentUUID": "42296073-656e-47a6-a676-28c0c6863bbf",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Filter Contact",
+              "fullTitle": "Groups And Contacts Filter Contact",
+              "timedOut": null,
+              "duration": 16622,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\GroupsAndContacts\\\\SelectGroupName.cy.js\\\\Groups And Contacts -- Filter Contact (failed).png\"\n    ]\n  ]\n}",
+              "code": "Login.OpenDashboard();\nGroupsAndContact.OpenGroups();\nGroupsAndContact.FilterGroup();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.sidenav-wrapper > :nth-child(1) > :nth-child(4) > .mat-focus-indicator`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.sidenav-wrapper > :nth-child(1) > :nth-child(4) > .mat-focus-indicator`, but never found it.\n    at GroupsAndContacts.OpenGroups (webpack://calling-post-automation/./cypress/ClassFiles/GroupsAndContacts/Add_New_group.js:7:7)\n    at Context.eval (webpack://calling-post-automation/./cypress/e2e/GroupsAndContacts/SelectGroupName.cy.js:67:23)",
+                "diff": null
+              },
+              "uuid": "8a6abd6f-dd6f-41b2-8d74-1a7d1b7b04d3",
+              "parentUUID": "42296073-656e-47a6-a676-28c0c6863bbf",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Search Contact",
+              "fullTitle": "Groups And Contacts Search Contact",
+              "timedOut": null,
+              "duration": 6896,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\GroupsAndContacts\\\\SelectGroupName.cy.js\\\\Groups And Contacts -- Search Contact (failed).png\"\n    ]\n  ]\n}",
+              "code": "Login.OpenDashboard();\nGroupsAndContact.OpenGroups();\nGroupsAndContact.SelectGroup();\nGroupsAndContact.SearchGroup();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.sidenav-wrapper > :nth-child(1) > :nth-child(4) > .mat-focus-indicator`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.sidenav-wrapper > :nth-child(1) > :nth-child(4) > .mat-focus-indicator`, but never found it.\n    at GroupsAndContacts.OpenGroups (webpack://calling-post-automation/./cypress/ClassFiles/GroupsAndContacts/Add_New_group.js:7:7)\n    at Context.eval (webpack://calling-post-automation/./cypress/e2e/GroupsAndContacts/SelectGroupName.cy.js:82:23)",
+                "diff": null
+              },
+              "uuid": "425d96e7-a72c-499b-821b-89d4814b2b75",
+              "parentUUID": "42296073-656e-47a6-a676-28c0c6863bbf",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Edit Text Keyword",
+              "fullTitle": "Groups And Contacts Edit Text Keyword",
+              "timedOut": null,
+              "duration": 6845,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\GroupsAndContacts\\\\SelectGroupName.cy.js\\\\Groups And Contacts -- Edit Text Keyword (failed).png\"\n    ]\n  ]\n}",
+              "code": "Login.OpenDashboard();\nGroupsAndContact.OpenGroups();\nGroupsAndContact.SelectGroup();\nGroupsAndContact.EditTextKeyword();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.sidenav-wrapper > :nth-child(1) > :nth-child(4) > .mat-focus-indicator`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.sidenav-wrapper > :nth-child(1) > :nth-child(4) > .mat-focus-indicator`, but never found it.\n    at GroupsAndContacts.OpenGroups (webpack://calling-post-automation/./cypress/ClassFiles/GroupsAndContacts/Add_New_group.js:7:7)\n    at Context.eval (webpack://calling-post-automation/./cypress/e2e/GroupsAndContacts/SelectGroupName.cy.js:98:23)",
+                "diff": null
+              },
+              "uuid": "fb121d52-2732-474e-a55b-3b69ec9a2067",
+              "parentUUID": "42296073-656e-47a6-a676-28c0c6863bbf",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "cd014f8c-51fa-4197-9f28-5e856978ea27",
+            "8a6abd6f-dd6f-41b2-8d74-1a7d1b7b04d3",
+            "425d96e7-a72c-499b-821b-89d4814b2b75",
+            "fb121d52-2732-474e-a55b-3b69ec9a2067"
+          ],
+          "pending": [
+            "30941338-32b4-4530-9ea6-b1f46f9457b4"
+          ],
+          "skipped": [],
+          "duration": 51011,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

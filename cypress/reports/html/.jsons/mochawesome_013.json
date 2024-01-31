@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-01-31T08:54:48.088Z",
+    "end": "2024-01-31T08:55:01.798Z",
+    "duration": 13710,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "5674023b-1330-4e92-95e8-4508dd2f198a",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Footer\\Feedback.cy.js",
+      "file": "cypress\\e2e\\Footer\\Feedback.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "c7c3a293-2fd5-424e-8653-7390534f2b6d",
+          "title": "Footer",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Feedback",
+              "fullTitle": "Footer Feedback",
+              "timedOut": null,
+              "duration": 13578,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Login.ValidLogin();\nFooter.OpenFeedback();",
+              "err": {},
+              "uuid": "065454fe-5e68-4d8d-ad85-22f2fe3f8502",
+              "parentUUID": "c7c3a293-2fd5-424e-8653-7390534f2b6d",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "065454fe-5e68-4d8d-ad85-22f2fe3f8502"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 13578,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

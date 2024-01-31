@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-01-31T10:00:07.352Z",
+    "end": "2024-01-31T10:00:21.831Z",
+    "duration": 14479,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "b2516904-62fc-4611-9845-505f0062f05c",
+      "title": "",
+      "fullFile": "cypress\\e2e\\TextKeywords\\TextKeywords.cy.js",
+      "file": "cypress\\e2e\\TextKeywords\\TextKeywords.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "2bba5de6-7df8-4b5c-b4f4-85eccaf98028",
+          "title": "Text Keywords",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "C154: Text Keywords",
+              "fullTitle": "Text Keywords C154: Text Keywords",
+              "timedOut": null,
+              "duration": 14322,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Login.ValidLogin();\nTextKeyword.OpenTextKeywords();",
+              "err": {},
+              "uuid": "2176faee-b5a3-4676-af89-0c097d76a750",
+              "parentUUID": "2bba5de6-7df8-4b5c-b4f4-85eccaf98028",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "2176faee-b5a3-4676-af89-0c097d76a750"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 14322,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

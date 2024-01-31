@@ -1,0 +1,124 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-01-31T08:56:26.641Z",
+    "end": "2024-01-31T08:56:56.244Z",
+    "duration": 29603,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "8dc22887-0bef-47b0-9080-d4b918e3b97b",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Get$50\\Get$50.cy.js",
+      "file": "cypress\\e2e\\Get$50\\Get$50.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "75a51984-55ef-4785-bf6b-722ac37461cc",
+          "title": "Reward Center",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Refer Email",
+              "fullTitle": "Reward Center Refer Email",
+              "timedOut": null,
+              "duration": 16071,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Login.ValidLogin();\nRewards.OpenGet$50();\nRewards.EnterEmail();\nRewards.SendEmail();",
+              "err": {},
+              "uuid": "84192d4b-8c6c-47ce-ac55-5cd8c38917bb",
+              "parentUUID": "75a51984-55ef-4785-bf6b-722ac37461cc",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Refer Multiple Emails",
+              "fullTitle": "Reward Center Refer Multiple Emails",
+              "timedOut": null,
+              "duration": 13293,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Login.OpenDashboard();\nRewards.OpenGet$50();\nRewards.EnterMultipleEmails();\nRewards.SendEmail();",
+              "err": {},
+              "uuid": "c3b4791c-e6c7-4337-9699-e4915a466db2",
+              "parentUUID": "75a51984-55ef-4785-bf6b-722ac37461cc",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "84192d4b-8c6c-47ce-ac55-5cd8c38917bb",
+            "c3b4791c-e6c7-4337-9699-e4915a466db2"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 29364,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

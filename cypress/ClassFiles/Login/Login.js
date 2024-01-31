@@ -6,13 +6,14 @@ class Login {
   ValidLogin() {
     cy.fixture("login").then((data) => {
       cy.LoginWithSessionStore(data.username, data.password, data.url)
+      cy.wait(3000)
       this.OpenDashboard()
       // cy.get(selectors.tftBtn).eq(0).click();
     });
   }
 
   OpenDashboard() {
-    cy.visit('https://test.callingpost.com/dashboard/')
+    cy.visit('https://apps.callingpost.com/dashboard/')
   }
 
   LoginWithIncorrectUsername() {

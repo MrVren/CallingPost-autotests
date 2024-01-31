@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-01-31T08:56:59.841Z",
+    "end": "2024-01-31T08:57:19.721Z",
+    "duration": 19880,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "58deca6d-5f7d-4d2d-b7ff-be70aac1d86c",
+      "title": "",
+      "fullFile": "cypress\\e2e\\GroupsAndContacts\\1Add_New_Group.cy.js",
+      "file": "cypress\\e2e\\GroupsAndContacts\\1Add_New_Group.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "9c273b12-7692-4e73-946e-4a379b7cdf7f",
+          "title": "Groups And Contacts",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "C164: Add New Group",
+              "fullTitle": "Groups And Contacts C164: Add New Group",
+              "timedOut": null,
+              "duration": 19766,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Login.ValidLogin();\nGroupsAndContact.OpenGroups();\nGroupsAndContact.CreateGroup();",
+              "err": {},
+              "uuid": "a952bc13-4576-4073-94b5-00c82d0753a2",
+              "parentUUID": "9c273b12-7692-4e73-946e-4a379b7cdf7f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "a952bc13-4576-4073-94b5-00c82d0753a2"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 19766,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

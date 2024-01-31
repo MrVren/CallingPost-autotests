@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-01-31T09:47:48.317Z",
+    "end": "2024-01-31T09:48:27.218Z",
+    "duration": 38901,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "50dd976b-62dc-428f-83f7-59204139ec55",
+      "title": "",
+      "fullFile": "cypress\\e2e\\PasswordLogin\\PasswordLogin.cy.js",
+      "file": "cypress\\e2e\\PasswordLogin\\PasswordLogin.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "d520f9bf-e49b-4978-a3e5-1606abbb9c3e",
+          "title": "Settings",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Password/Login",
+              "fullTitle": "Settings Password/Login",
+              "timedOut": null,
+              "duration": 38561,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Login.ValidLogin();\nPassword.OpenPasswords();\nPassword.EnterPassword();\nPassword.OpenExternalLinks();",
+              "err": {},
+              "uuid": "afffe268-4dd3-45b2-809b-b2de26b0d23c",
+              "parentUUID": "d520f9bf-e49b-4978-a3e5-1606abbb9c3e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "afffe268-4dd3-45b2-809b-b2de26b0d23c"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 38561,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

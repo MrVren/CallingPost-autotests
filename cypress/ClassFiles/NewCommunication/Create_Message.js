@@ -112,12 +112,14 @@ class CreateVoiceMessage {
   ScheduleMessage() {
     cy.get(selectors.createVoiceMsgBtn).click()
     cy.wait(1000);
-    cy.get(selectors.toggleBtn).eq(-1).click();
+    cy.get(selectors.createVoiceMsgBtn).click()
+    cy.get('#mat-checkbox-10').click()
+    cy.get('#mat-radio-5').click();
     cy.wait(3000);
-    cy.get(selectors.updateBtn).eq(-1).click({ force: true });
-    cy.wait(1000);
-    cy.get(selectors.toggleBtn).eq(-1).click();
+    cy.get(selectors.createVoiceMsgBtn).click()
     cy.wait(3000);
+    cy.get(selectors.sendMessageBtn).click()
+    cy.get(selectors.snackBar).should("have.text", " Message queue successfully created! ")
   }
 
   AddCallerId() {

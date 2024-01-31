@@ -1,0 +1,143 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-01-31T08:59:16.483Z",
+    "end": "2024-01-31T09:02:07.272Z",
+    "duration": 170789,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "11f411bf-feac-433c-864b-91fc3a9daaaa",
+      "title": "",
+      "fullFile": "cypress\\e2e\\GroupsAndContacts\\Create_Edit_Delete_Group.cy.js",
+      "file": "cypress\\e2e\\GroupsAndContacts\\Create_Edit_Delete_Group.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "8c8bbb5b-49b1-4af6-8d37-095649e6fe6e",
+          "title": "Groups And Contacts",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Create New Group",
+              "fullTitle": "Groups And Contacts Create New Group",
+              "timedOut": null,
+              "duration": 21759,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Login.ValidLogin();\nGroupsAndContact.OpenGroups();\nGroupsAndContact.CreateGroup(name);",
+              "err": {},
+              "uuid": "b21d533c-8e52-4cc3-9b3a-3438942c9eb0",
+              "parentUUID": "8c8bbb5b-49b1-4af6-8d37-095649e6fe6e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Edit Group",
+              "fullTitle": "Groups And Contacts Edit Group",
+              "timedOut": null,
+              "duration": 79400,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Login.OpenDashboard();\nGroupsAndContact.OpenGroups();\nGroupsAndContact.EditGroup();",
+              "err": {},
+              "uuid": "13451680-678a-47ec-ae99-987ccab602a4",
+              "parentUUID": "8c8bbb5b-49b1-4af6-8d37-095649e6fe6e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Delete Group",
+              "fullTitle": "Groups And Contacts Delete Group",
+              "timedOut": null,
+              "duration": 68924,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Login.OpenDashboard();\nGroupsAndContact.OpenGroups();\nGroupsAndContact.DeleteGroup();",
+              "err": {},
+              "uuid": "5a309daf-9fa9-4315-b3d3-8cabc3bfd873",
+              "parentUUID": "8c8bbb5b-49b1-4af6-8d37-095649e6fe6e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "b21d533c-8e52-4cc3-9b3a-3438942c9eb0",
+            "13451680-678a-47ec-ae99-987ccab602a4",
+            "5a309daf-9fa9-4315-b3d3-8cabc3bfd873"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 170083,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

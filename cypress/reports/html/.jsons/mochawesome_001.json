@@ -1,0 +1,162 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-01-31T08:46:55.862Z",
+    "end": "2024-01-31T08:47:48.787Z",
+    "duration": 52925,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "a680eedb-cc53-43ac-bf5f-ba2144ea745d",
+      "title": "",
+      "fullFile": "cypress\\e2e\\AccountOverview\\AccountOverview.cy.js",
+      "file": "cypress\\e2e\\AccountOverview\\AccountOverview.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "1361c761-38b2-478c-a98f-474135928b5c",
+          "title": "Account Overview",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Open Premium Plan",
+              "fullTitle": "Account Overview Open Premium Plan",
+              "timedOut": null,
+              "duration": 19222,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Login.ValidLogin();\nOverview.OpenPremiumPlan();",
+              "err": {},
+              "uuid": "2ac07884-1bda-47e7-87ca-6fde64fb51a4",
+              "parentUUID": "1361c761-38b2-478c-a98f-474135928b5c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Open My Profile",
+              "fullTitle": "Account Overview Open My Profile",
+              "timedOut": null,
+              "duration": 14896,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Login.OpenDashboard();\nOverview.OpenMyProfile();",
+              "err": {},
+              "uuid": "58429a24-583c-445b-aa3a-7860aa84a90d",
+              "parentUUID": "1361c761-38b2-478c-a98f-474135928b5c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Open My Setting",
+              "fullTitle": "Account Overview Open My Setting",
+              "timedOut": null,
+              "duration": 8750,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Login.OpenDashboard();\nOverview.OpenMySettings();",
+              "err": {},
+              "uuid": "9dba78da-8cb0-44da-b0ed-58fb5eb92038",
+              "parentUUID": "1361c761-38b2-478c-a98f-474135928b5c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Open My Billing",
+              "fullTitle": "Account Overview Open My Billing",
+              "timedOut": null,
+              "duration": 9587,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Login.OpenDashboard();\nOverview.OpenMyBilling();",
+              "err": {},
+              "uuid": "cf5db960-77af-4948-a9ea-f8bf5ccaddb5",
+              "parentUUID": "1361c761-38b2-478c-a98f-474135928b5c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "2ac07884-1bda-47e7-87ca-6fde64fb51a4",
+            "58429a24-583c-445b-aa3a-7860aa84a90d",
+            "9dba78da-8cb0-44da-b0ed-58fb5eb92038",
+            "cf5db960-77af-4948-a9ea-f8bf5ccaddb5"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 52455,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

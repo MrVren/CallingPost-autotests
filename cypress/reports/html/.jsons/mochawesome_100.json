@@ -1,0 +1,129 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 1,
+    "pending": 0,
+    "failures": 1,
+    "start": "2024-01-31T14:04:36.645Z",
+    "end": "2024-01-31T14:05:19.191Z",
+    "duration": 42546,
+    "testsRegistered": 2,
+    "passPercent": 50,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "14a8fadf-0891-49dd-8128-9393b44750a4",
+      "title": "",
+      "fullFile": "cypress\\e2e\\GroupsAndContacts\\Create_New_Group.cy.js",
+      "file": "cypress\\e2e\\GroupsAndContacts\\Create_New_Group.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "e5b9d42a-a9f1-4de7-a6e9-b33c087ac031",
+          "title": "Groups And Contacts",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Create New Group Add Contacts Later",
+              "fullTitle": "Groups And Contacts Create New Group Add Contacts Later",
+              "timedOut": null,
+              "duration": 18801,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Login.ValidLogin();\nGroupsAndContact.OpenGroups();\nGroupsAndContact.CreateGroup();",
+              "err": {},
+              "uuid": "16210d85-0300-4136-87cb-3e528569f271",
+              "parentUUID": "e5b9d42a-a9f1-4de7-a6e9-b33c087ac031",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Create New Group Add Contacts",
+              "fullTitle": "Groups And Contacts Create New Group Add Contacts",
+              "timedOut": null,
+              "duration": 23154,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\GroupsAndContacts\\\\Create_New_Group.cy.js\\\\Groups And Contacts -- Create New Group Add Contacts (failed).png\"\n    ]\n  ]\n}",
+              "code": "Login.OpenDashboard();\nGroupsAndContact.OpenGroups();\nGroupsAndContact.CreateGroupAdd();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.sidenav-wrapper > :nth-child(1) > :nth-child(4) > .mat-focus-indicator`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.sidenav-wrapper > :nth-child(1) > :nth-child(4) > .mat-focus-indicator`, but never found it.\n    at GroupsAndContacts.OpenGroups (webpack://calling-post-automation/./cypress/ClassFiles/GroupsAndContacts/Add_New_group.js:7:7)\n    at Context.eval (webpack://calling-post-automation/./cypress/e2e/GroupsAndContacts/Create_New_Group.cy.js:51:23)",
+                "diff": null
+              },
+              "uuid": "8a95579a-041a-4465-9017-a7d8992445ae",
+              "parentUUID": "e5b9d42a-a9f1-4de7-a6e9-b33c087ac031",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "16210d85-0300-4136-87cb-3e528569f271"
+          ],
+          "failures": [
+            "8a95579a-041a-4465-9017-a7d8992445ae"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 41955,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-01-31T08:49:08.308Z",
+    "end": "2024-01-31T08:50:14.533Z",
+    "duration": 66225,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "26a1a514-1df0-44db-a7e5-b1d3605648dc",
+      "title": "",
+      "fullFile": "cypress\\e2e\\AutoReminders\\Create_Sort_Delete_All_Reminder.cy.js",
+      "file": "cypress\\e2e\\AutoReminders\\Create_Sort_Delete_All_Reminder.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "2b7e93ab-ffc3-47bc-8a50-83f294b455ba",
+          "title": "Auto Reminders",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Create New Reminder",
+              "fullTitle": "Auto Reminders Create New Reminder",
+              "timedOut": null,
+              "duration": 33523,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Login.ValidLogin();\nReminder.OpenAutoReminders();\nReminder.OpenCreateReminder();\nReminder.EnterReminderDetails();\nReminder.SaveReminder();",
+              "err": {},
+              "uuid": "b325bd6c-92e6-48af-8cfd-1a17448efdc8",
+              "parentUUID": "2b7e93ab-ffc3-47bc-8a50-83f294b455ba",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Sort Reminder",
+              "fullTitle": "Auto Reminders Sort Reminder",
+              "timedOut": null,
+              "duration": 20857,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Login.OpenDashboard();\nReminder.OpenAutoReminders();\nReminder.SortFilters();",
+              "err": {},
+              "uuid": "07e160b7-d561-4979-b8f1-de9cd8800632",
+              "parentUUID": "2b7e93ab-ffc3-47bc-8a50-83f294b455ba",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Delete All Reminders",
+              "fullTitle": "Auto Reminders Delete All Reminders",
+              "timedOut": null,
+              "duration": 11088,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Login.OpenDashboard();\nReminder.OpenAutoReminders();\nReminder.DeleteAllReminders();",
+              "err": {},
+              "uuid": "26f9143c-c662-42ea-a626-a1971a422b16",
+              "parentUUID": "2b7e93ab-ffc3-47bc-8a50-83f294b455ba",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "b325bd6c-92e6-48af-8cfd-1a17448efdc8",
+            "07e160b7-d561-4979-b8f1-de9cd8800632",
+            "26f9143c-c662-42ea-a626-a1971a422b16"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 65468,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
