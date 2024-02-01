@@ -15,8 +15,8 @@ module.exports = (on, config) => {
 }
 
 module.exports = (on, config) => {
-    // accept a configFile value or use development by default
-    const file = config.env.configFile || 'development'
+    // accept a configFile value or use test by default
+    const file = config.env.configFile || 'test'
 
     return getConfigurationByFile(file)
 }
