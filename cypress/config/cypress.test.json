@@ -1,0 +1,29 @@
+{
+    "baseUrl": "https://test.callingpost.net",
+    "projectId": "13tz4w",
+    "video": false,
+    "chromeWebSecurity": false,
+    "reporter": "cypress-mochawesome-reporter",
+    "e2e": {
+        "viewportHeight": 1080,
+        "viewportWidth": 1920,
+        "taskTimeout": 5000,
+        "experimentalRunAllSpecs": true
+    },
+    "env": {
+        "testrail": {
+            "domain": "https://jainconsulting.testrail.io/",
+            "username": "michael.droz@gmail.com",
+            "password": "BitLady!23!",
+            "projectId": "P2",
+            "milestoneId": "",
+            "suiteId": "",
+            "runName": "Auto test run __datetime__",
+            "closeRun": false,
+            "screenshots": true
+        },
+        "username": "6502081632",
+        "password": "444444",
+        "fakeUsername": "6502081699"
+    }
+}

@@ -4,11 +4,9 @@ import selectors from "../../Selectors/CreateAccount/CreateAccount";
 
 class CreateAccount {
   OpenRegistration() {
-    cy.fixture("login").then((data) => {
-      cy.visit(data.url, {
+      cy.visit(`${Cypress.env('url')}/login`, {
         failOnStatusCode: false,
       });
-    });
     cy.get(selectors.createAccountBtn).click();
   }
 

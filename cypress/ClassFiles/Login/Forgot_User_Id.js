@@ -4,11 +4,9 @@ import selectors from "../../Selectors/Login/Login";
 
 class ForgotUserId {
   ForgotUserId() {
-    cy.fixture("login").then((data) => {
-      cy.visit(data.url, {
+      cy.visit(`${Cypress.env('url')}/login`, {
         failOnStatusCode: false,
       });
-    });
     cy.get(selectors.forgotUserIdBtn).click();
     cy.get(selectors.emailInput).clear().type("michael.droz+2@gmail.com");
     cy.get(selectors.sendRecoveryEmailBtn).eq(0).click();
@@ -16,11 +14,9 @@ class ForgotUserId {
   }
 
   IncorrectRecoveryEmail() {
-    cy.fixture("login").then((data) => {
-      cy.visit(data.url, {
+      cy.visit(`${Cypress.env('url')}/login`, {
         failOnStatusCode: false,
       });
-    });
     cy.get(selectors.forgotUserIdBtn).click();
     cy.get(selectors.emailInput).clear().type("email@gmail.com");
     cy.get(selectors.sendRecoveryEmailBtn).eq(0).click();
@@ -28,11 +24,9 @@ class ForgotUserId {
   }
 
   CancelRequest() {
-    cy.fixture("login").then((data) => {
-      cy.visit(data.url, {
+      cy.visit(`${Cypress.env('url')}/login`, {
         failOnStatusCode: false,
       });
-    });
     cy.wait(500);
     cy.get(selectors.forgotUserIdBtn).click();
     cy.get(selectors.sendRecoveryEmailBtn).eq(1).click();

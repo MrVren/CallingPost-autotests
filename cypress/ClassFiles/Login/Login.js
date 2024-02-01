@@ -4,21 +4,18 @@ import selectors from "../../Selectors/Login/Login";
 
 class Login {
   ValidLogin() {
-    cy.fixture("login").then((data) => {
-      cy.LoginWithSessionStore(data.username, data.password, data.url)
+      cy.LoginWithSessionStore(Cypress.env('username'), Cypress.env('password'), `${Cypress.env('url')}/login`)
       cy.wait(3000)
       this.OpenDashboard()
-      // cy.get(selectors.tftBtn).eq(0).click();
-    });
-  }
+    }
+
 
   OpenDashboard() {
-    cy.visit('https://apps.callingpost.com/dashboard/')
+    cy.visit(`${Cypress.env('url')}/dashboard/`)
   }
 
   LoginWithIncorrectUsername() {
-    cy.fixture("login").then((data) => {
-      cy.visit(data.url, {
+      cy.visit(`${Cypress.env('url')}/login`, {
         failOnStatusCode: false,
       });
       cy.wait(2000);
@@ -29,12 +26,11 @@ class Login {
       cy.get(selectors.loginBtn).click();
       cy.wait(4000);
       cy.get(selectors.invalidAlert).should("exist");
-    });
+
   }
 
   LoginWithIncorrectPassword() {
-    cy.fixture("login").then((data) => {
-      cy.visit(data.url, {
+      cy.visit(`${Cypress.env('url')}/login`, {
         failOnStatusCode: false,
       });
       cy.wait(2000);
@@ -45,12 +41,10 @@ class Login {
       cy.get(selectors.loginBtn).click();
       cy.wait(4000);
       cy.get(selectors.invalidAlert).should("exist");
-    });
   }
 
   LoginWithIncorrectUsernameAndPassword() {
-    cy.fixture("login").then((data) => {
-      cy.visit(data.url, {
+      cy.visit(`${Cypress.env('url')}/login`, {
         failOnStatusCode: false,
       });
       cy.wait(2000);
@@ -61,7 +55,6 @@ class Login {
       cy.get(selectors.loginBtn).click();
       cy.wait(4000);
       cy.get(selectors.invalidAlert).should("exist");
-    });
   }
 }
 

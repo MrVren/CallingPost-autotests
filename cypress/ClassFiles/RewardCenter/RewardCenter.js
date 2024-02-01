@@ -56,14 +56,12 @@ class RewardCenter {
   SelectPlan() {
     cy.wait(4000);
     cy.get(selectors.tftBtn).eq(0).click();
-    cy.fixture("login").then((data) => {
       cy.wait(2000);
-      cy.get(selectors.usernameInput).clear().type(data.username);
+      cy.get(selectors.usernameInput).clear().type(Cypress.env('username'));
       cy.wait(2000);
-      cy.get(selectors.passwordInput).clear().type(data.password);
+      cy.get(selectors.passwordInput).clear().type(Cypress.env('password'));
       cy.wait(1000);
       cy.get(selectors.loginBtn).click();
-    });
   }
 
   RecentCommunications() {
