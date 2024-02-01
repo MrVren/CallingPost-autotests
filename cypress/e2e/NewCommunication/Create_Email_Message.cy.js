@@ -9,12 +9,13 @@ const EmailMessage = new CreateMessage();
 describe("New Communication", () => {
   it(
     "C170: Create Email Message",
-     {
-       retries: {
-         runMode: 0,
-         openMode: 0,
-       },
-     },
+    {
+      tags: '@regression',
+      retries: {
+        runMode: 0,
+        openMode: 0,
+      },
+    },
     function () {
       Login.ValidLogin();
       EmailMessage.OpenNewCommunication();

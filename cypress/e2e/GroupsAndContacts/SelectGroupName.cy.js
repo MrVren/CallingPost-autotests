@@ -14,6 +14,7 @@ describe("Groups And Contacts", () => {
   it.skip(
     "Select Group / New Communication",
     {
+      tags: '@regression',
       retries: {
         runMode: 0,
         openMode: 0,
@@ -30,6 +31,7 @@ describe("Groups And Contacts", () => {
   it(
     "Add Contact",
     {
+      tags: '@regression',
       retries: {
         runMode: 0,
         openMode: 0,
@@ -46,6 +48,7 @@ describe("Groups And Contacts", () => {
   it(
     "Filter Contact",
     {
+      tags: '@regression',
       retries: {
         runMode: 0,
         openMode: 0,
@@ -62,6 +65,7 @@ describe("Groups And Contacts", () => {
   it(
     "Search Contact",
     {
+      tags: '@regression',
       retries: {
         runMode: 0,
         openMode: 0,
@@ -79,6 +83,7 @@ describe("Groups And Contacts", () => {
   it(
     "Edit Text Keyword",
     {
+      tags: '@regression',
       retries: {
         runMode: 0,
         openMode: 0,

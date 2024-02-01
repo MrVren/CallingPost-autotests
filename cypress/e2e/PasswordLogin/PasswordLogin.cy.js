@@ -14,6 +14,7 @@ describe("Settings", () => {
   it(
     "Password/Login",
     {
+      tags: '@smoke',
       retries: {
         runMode: 0,
         openMode: 0,

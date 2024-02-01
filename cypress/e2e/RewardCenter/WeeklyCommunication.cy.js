@@ -10,6 +10,7 @@ describe("Reward Center", () => {
   it(
     "C151: Weekly Communications",
     {
+      tags: '@regression',
       retries: {
         runMode: 0,
         openMode: 0,

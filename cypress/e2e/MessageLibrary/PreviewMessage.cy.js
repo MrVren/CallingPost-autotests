@@ -14,6 +14,7 @@ describe("Message Library", () => {
   it(
     "Preview Text Message",
     {
+      tags: '@regression',
       retries: {
         runMode: 0,
         openMode: 0,
@@ -29,6 +30,7 @@ describe("Message Library", () => {
   it(
     "Preview Email Message",
     {
+      tags: '@regression',
       retries: {
         runMode: 0,
         openMode: 0,
@@ -45,6 +47,7 @@ describe("Message Library", () => {
   it(
     "Preview Voice Message",
     {
+      tags: '@regression',
       retries: {
         runMode: 0,
         openMode: 0,

@@ -14,6 +14,7 @@ describe("Custom Phone Number", () => {
   it(
     "Discounts",
     {
+      tags: '@regression',
       retries: {
         runMode: 0,
         openMode: 0,

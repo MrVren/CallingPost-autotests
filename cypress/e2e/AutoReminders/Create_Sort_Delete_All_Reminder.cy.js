@@ -15,6 +15,7 @@ describe("Auto Reminders", () => {
   it(
     "Create New Reminder",
     {
+      tags: '@regression',
       retries: {
         runMode: 0,
         openMode: 0,
@@ -32,6 +33,7 @@ describe("Auto Reminders", () => {
   it(
     "Sort Reminder",
     {
+      tags: '@regression',
       retries: {
         runMode: 0,
         openMode: 0,
@@ -48,6 +50,7 @@ describe("Auto Reminders", () => {
   it(
     "Delete All Reminders",
     {
+      tags: '@regression',
       retries: {
         runMode: 0,
         openMode: 0,

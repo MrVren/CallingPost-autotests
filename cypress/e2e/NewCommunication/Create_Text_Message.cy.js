@@ -10,6 +10,7 @@ describe("New Communication", () => {
   it(
     "C171: Create Text Message",
     {
+      tags: '@regression',
       retries: {
         runMode: 0,
         openMode: 0,

@@ -14,6 +14,7 @@ describe("My Profile", () => {
   it(
     "Edit My Profile",
     {
+      tags: '@smoke',
       retries: {
         runMode: 0,
         openMode: 0,

@@ -10,6 +10,7 @@ describe("Reward Center", () => {
   it(
     "C152: Write Review",
     {
+      tags: '@regression',
       retries: {
         runMode: 0,
         openMode: 0,

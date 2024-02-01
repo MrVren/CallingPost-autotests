@@ -12,6 +12,7 @@ describe("Login", () => {
   it(
     "Login With Incorrect UserId & Incorrect Password",
     {
+      tags: '@smoke',
       retries: {
         runMode: 0,
         openMode: 0,

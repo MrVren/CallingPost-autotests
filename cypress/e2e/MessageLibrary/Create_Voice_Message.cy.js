@@ -10,6 +10,7 @@ describe("Message Library", () => {
   it(
     "C169: Create Voice Message",
     {
+      tags: '@smoke',
       retries: {
         runMode: 0,
         openMode: 0,

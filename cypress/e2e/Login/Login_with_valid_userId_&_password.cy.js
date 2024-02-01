@@ -8,6 +8,7 @@ describe("Login", () => {
   it(
     "C166: Login With Valid UserId & Password",
     {
+      tags: ['@smoke', '@regression'],
       retries: {
         runMode: 0,
         openMode: 0,

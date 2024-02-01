@@ -14,6 +14,7 @@ describe("Reward Center", () => {
   it(
     "Refer Email",
     {
+      tags: '@regression',
       retries: {
         runMode: 0,
         openMode: 0,
@@ -30,6 +31,7 @@ describe("Reward Center", () => {
   it(
     "Refer Multiple Emails",
     {
+      tags: '@regression',
       retries: {
         runMode: 0,
         openMode: 0,

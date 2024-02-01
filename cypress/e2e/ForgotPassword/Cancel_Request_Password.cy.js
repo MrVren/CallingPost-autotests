@@ -12,6 +12,7 @@ describe("Login", () => {
   it(
     "Cancel Request Password",
     {
+      tags: '@regression',
       retries: {
         runMode: 0,
         openMode: 0,

@@ -14,6 +14,7 @@ describe("New Communication", () => {
   it(
     "View Messages",
     {
+      tags: '@regression',
       retries: {
         runMode: 0,
         openMode: 0,
@@ -29,6 +30,7 @@ describe("New Communication", () => {
   it.skip(
     "Search Messages",
     {
+      tags: '@regression',
       retries: {
         runMode: 0,
         openMode: 0,
@@ -46,6 +48,7 @@ describe("New Communication", () => {
   it.skip(
     "Preview Messages",
     {
+      tags: '@regression',
       retries: {
         runMode: 0,
         openMode: 0,
@@ -64,6 +67,7 @@ describe("New Communication", () => {
   it.skip(
     "Select Message",
     {
+      tags: '@regression',
       retries: {
         runMode: 0,
         openMode: 0,
@@ -81,6 +85,7 @@ describe("New Communication", () => {
   it(
     "Schedule Message",
     {
+      tags: '@regression',
       retries: {
         runMode: 0,
         openMode: 0,
@@ -94,7 +99,6 @@ describe("New Communication", () => {
       NewCommunication.SelectMessage();
       NewCommunication.SelectGroup();
       NewCommunication.ScheduleMessage();
-      // what this test should do?
     }
   );
 });

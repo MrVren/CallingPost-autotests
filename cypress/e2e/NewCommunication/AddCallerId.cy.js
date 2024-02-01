@@ -14,6 +14,7 @@ describe("New Communication", () => {
   it(
     "Add Caller Id",
     {
+      tags: '@regression',
       retries: {
         runMode: 0,
         openMode: 0,

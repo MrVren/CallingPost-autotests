@@ -8,6 +8,7 @@ describe("Registration", () => {
   it(
     "C156: Create Free Account",
     {
+      tags: '@smoke',
       retries: {
         runMode: 0,
         openMode: 0,

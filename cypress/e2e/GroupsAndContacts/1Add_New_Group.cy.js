@@ -11,6 +11,7 @@ describe("Groups And Contacts", () => {
   it(
     "C164: Add New Group",
     {
+      tags: '@regression',
       retries: {
         runMode: 0,
         openMode: 0,

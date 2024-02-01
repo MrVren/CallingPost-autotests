@@ -14,6 +14,7 @@ describe("Call-In Settings", () => {
   it(
     "Edit Call-In Settings",
     {
+      tags: '@regression',
       retries: {
         runMode: 0,
         openMode: 0,

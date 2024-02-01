@@ -10,6 +10,7 @@ describe("Message Library", () => {
   it(
     "C168: Create Text Message",
     {
+      tags: '@smoke',
       retries: {
         runMode: 0,
         openMode: 0,

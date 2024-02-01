@@ -16,6 +16,7 @@ describe("Text Keywords", () => {
   it(
     "C153: Create Keyword",
     {
+      tags: '@regression',
       retries: {
         runMode: 0,
         openMode: 0,

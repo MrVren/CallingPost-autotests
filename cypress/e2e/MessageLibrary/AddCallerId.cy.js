@@ -14,6 +14,7 @@ describe("Message Library", () => {
   it(
     "Add Caller Id",
     {
+      tags: '@smoke',
       retries: {
         runMode: 0,
         openMode: 0,

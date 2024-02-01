@@ -10,6 +10,7 @@ describe("Reward Center", () => {
   it(
     "C150: Upgrade Unlimited",
     {
+      tags: '@regression',
       retries: {
         runMode: 0,
         openMode: 0,

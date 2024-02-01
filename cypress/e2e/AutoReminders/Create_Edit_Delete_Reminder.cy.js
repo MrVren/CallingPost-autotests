@@ -10,10 +10,11 @@ describe("Auto Reminders", () => {
   Cypress.on("uncaught:exception", (err, runnable) => {
     return false;
   });
-//  @smoke 
+
   it(
     "Create New Reminder",
     {
+      tags: '@regression',
       retries: {
         runMode: 0,
         openMode: 0,
@@ -31,6 +32,7 @@ describe("Auto Reminders", () => {
   it(
     "Edit Reminder",
     {
+      tags: '@regression',
       retries: {
         runMode: 0,
         openMode: 0,
@@ -48,6 +50,7 @@ describe("Auto Reminders", () => {
   it(
     "Delete Reminder",
     {
+      tags: '@regression',
       retries: {
         runMode: 0,
         openMode: 0,

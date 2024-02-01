@@ -10,6 +10,7 @@ describe("Groups And Contacts", () => {
   it(
     "C165: All Contacts",
     {
+      tags: '@regression',
       retries: {
         runMode: 0,
         openMode: 0,
@@ -25,6 +26,7 @@ describe("Groups And Contacts", () => {
   it(
     "Filter Contacts",
     {
+      tags: '@regression',
       retries: {
         runMode: 0,
         openMode: 0,
@@ -41,6 +43,7 @@ describe("Groups And Contacts", () => {
   it(
     "Search Contacts",
     {
+      tags: '@regression',
       retries: {
         runMode: 0,
         openMode: 0,
@@ -58,6 +61,7 @@ describe("Groups And Contacts", () => {
   it(
     "Toggle Contact / Delete Icon",
     {
+      tags: '@regression',
       retries: {
         runMode: 0,
         openMode: 0,

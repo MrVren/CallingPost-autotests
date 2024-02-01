@@ -8,6 +8,7 @@ describe("Login", () => {
   it(
     "C163: Forgot UserId",
     {
+      tags: '@regression',
       retries: {
         runMode: 0,
         openMode: 0,

@@ -14,6 +14,7 @@ describe("Account Managers", () => {
   it(
     "Edit Account Managers",
     {
+      tags: '@regression',
       retries: {
         runMode: 0,
         openMode: 0,

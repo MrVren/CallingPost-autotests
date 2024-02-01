@@ -14,6 +14,7 @@ describe("Message Library", () => {
   it(
     "Sort Filter Message",
     {
+      tags: '@regression',
       retries: {
         runMode: 0,
         openMode: 0,
@@ -29,6 +30,7 @@ describe("Message Library", () => {
   it(
     "Filter Voice Message",
     {
+      tags: '@regression',
       retries: {
         runMode: 0,
         openMode: 0,
@@ -45,6 +47,7 @@ describe("Message Library", () => {
   it(
     "Filter Text Message",
     {
+      tags: '@regression',
       retries: {
         runMode: 0,
         openMode: 0,
@@ -61,6 +64,7 @@ describe("Message Library", () => {
   it(
     "Filter Email Message",
     {
+      tags: '@regression',
       retries: {
         runMode: 0,
         openMode: 0,

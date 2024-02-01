@@ -10,6 +10,7 @@ describe("Status And Result", () => {
   it(
     "C175: Search Message",
     {
+      tags: '@regression',
       retries: {
         runMode: 0,
         openMode: 0,

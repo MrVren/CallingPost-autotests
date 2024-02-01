@@ -14,6 +14,7 @@ describe("Footer", () => {
   it(
     "Help Center",
     {
+      tags: '@smoke',
       retries: {
         runMode: 0,
         openMode: 0,

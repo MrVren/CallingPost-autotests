@@ -10,6 +10,7 @@ describe("Reward Center", () => {
   it(
     "C149: Refer Email",
     {
+      tags: '@regression',
       retries: {
         runMode: 0,
         openMode: 0,

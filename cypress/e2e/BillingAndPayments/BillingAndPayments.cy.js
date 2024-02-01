@@ -14,6 +14,7 @@ describe("Billing And Payments", () => {
   it(
     "Add Bank Account",
     {
+      tags: '@regression',
       retries: {
         runMode: 0,
         openMode: 0,
@@ -29,6 +30,7 @@ describe("Billing And Payments", () => {
   it(
     "Add New Payment Method",
     {
+      tags: '@regression',
       retries: {
         runMode: 0,
         openMode: 0,
@@ -45,6 +47,7 @@ describe("Billing And Payments", () => {
   it(
     "Edit Billing And Payments",
     {
+      tags: '@regression',
       retries: {
         runMode: 0,
         openMode: 0,
@@ -61,6 +64,7 @@ describe("Billing And Payments", () => {
   it(
     "Delete Billing And Payments",
     {
+      tags: '@regression',
       retries: {
         runMode: 0,
         openMode: 0,
@@ -77,6 +81,7 @@ describe("Billing And Payments", () => {
   it(
     "Billing History And Invoicing",
     {
+      tags: '@regression',
       retries: {
         runMode: 0,
         openMode: 0,
@@ -95,6 +100,7 @@ describe("Billing And Payments", () => {
   it.skip(
     "Change Plan",
     {
+      tags: '@regression',
       retries: {
         runMode: 0,
         openMode: 0,

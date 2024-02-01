@@ -10,6 +10,7 @@ describe("Status And Result", () => {
   it(
     "C176: Status And Result",
     {
+      tags: '@regression',
       retries: {
         runMode: 0,
         openMode: 0,

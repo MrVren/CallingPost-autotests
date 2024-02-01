@@ -10,6 +10,7 @@ describe("Status And Result", () => {
   it(
     "C174: Refresh Message",
     {
+      tags: '@regression',
       retries: {
         runMode: 0,
         openMode: 0,

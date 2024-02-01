@@ -10,6 +10,7 @@ describe("New Communication", () => {
   it(
     "C172: Create Voice Message",
     {
+      tags: '@regression',
       retries: {
         runMode: 0,
         openMode: 0,

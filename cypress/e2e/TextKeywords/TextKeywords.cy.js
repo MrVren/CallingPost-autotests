@@ -10,6 +10,7 @@ describe("Text Keywords", () => {
   it(
     "C154: Text Keywords",
     {
+      tags: '@regression',
       retries: {
         runMode: 0,
         openMode: 0,

@@ -15,6 +15,7 @@ describe("Groups And Contacts", () => {
   it(
     "Create New Group",
     {
+      tags: '@regression',
       retries: {
         runMode: 0,
         openMode: 0,
@@ -30,6 +31,7 @@ describe("Groups And Contacts", () => {
   it(
     "Edit Group",
     {
+      tags: '@regression',
       retries: {
         runMode: 0,
         openMode: 0,
@@ -46,6 +48,7 @@ describe("Groups And Contacts", () => {
   it(
     "Delete Group",
     {
+      tags: '@regression',
       retries: {
         runMode: 0,
         openMode: 0,

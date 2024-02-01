@@ -14,6 +14,7 @@ describe("Recent Communications", () => {
   it(
     "Open Create New Communication Page",
     {
+      tags: '@regression',
       retries: {
         runMode: 0,
         openMode: 0,
@@ -28,6 +29,7 @@ describe("Recent Communications", () => {
   it(
     "See All Communications",
     {
+      tags: '@regression',
       retries: {
         runMode: 0,
         openMode: 0,
@@ -43,6 +45,7 @@ describe("Recent Communications", () => {
   it(
     "Get $50 Credit",
     {
+      tags: '@regression',
       retries: {
         runMode: 0,
         openMode: 0,
@@ -60,6 +63,7 @@ describe("Recent Communications", () => {
   it(
     "Earn Rewards",
     {
+      tags: '@regression',
       retries: {
         runMode: 0,
         openMode: 0,
@@ -75,6 +79,7 @@ describe("Recent Communications", () => {
   it(
     "PDF Guide",
     {
+      tags: '@regression',
       retries: {
         runMode: 0,
         openMode: 0,
@@ -90,6 +95,7 @@ describe("Recent Communications", () => {
   it(
     "Download App",
     {
+      tags: '@regression',
       retries: {
         runMode: 0,
         openMode: 0,
@@ -105,6 +111,7 @@ describe("Recent Communications", () => {
   it(
     "Communication Detail Page",
     {
+      tags: '@regression',
       retries: {
         runMode: 0,
         openMode: 0,

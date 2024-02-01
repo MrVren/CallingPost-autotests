@@ -16,6 +16,7 @@ describe("Message Library", () => {
   it(
     "Create Voice Message",
     {
+      tags: '@regression',
       retries: {
         runMode: 0,
         openMode: 0,
@@ -31,6 +32,7 @@ describe("Message Library", () => {
   it(
     "Edit Voice Message",
     {
+      tags: '@regression',
       retries: {
         runMode: 0,
         openMode: 0,
@@ -47,6 +49,7 @@ describe("Message Library", () => {
   it(
     "Delete Voice Message",
     {
+      tags: '@regression',
       retries: {
         runMode: 0,
         openMode: 0,

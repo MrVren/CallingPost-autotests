@@ -14,6 +14,7 @@ describe("Groups And Contacts More Options", () => {
   it(
     "Print",
     {
+      tags: '@smoke',
       retries: {
         runMode: 0,
         openMode: 0,
@@ -30,6 +31,7 @@ describe("Groups And Contacts More Options", () => {
   it(
     "Export",
     {
+      tags: '@smoke',
       retries: {
         runMode: 0,
         openMode: 0,
@@ -47,6 +49,7 @@ describe("Groups And Contacts More Options", () => {
   it(
     "Edit Group Name",
     {
+      tags: '@regression',
       retries: {
         runMode: 0,
         openMode: 0,
@@ -64,6 +67,7 @@ describe("Groups And Contacts More Options", () => {
   it(
     "Deactive All Contacts",
     {
+      tags: '@regression',
       retries: {
         runMode: 0,
         openMode: 0,
@@ -81,6 +85,7 @@ describe("Groups And Contacts More Options", () => {
   it(
     "Activate All Contacts",
     {
+      tags: '@regression',
       retries: {
         runMode: 0,
         openMode: 0,
@@ -98,6 +103,7 @@ describe("Groups And Contacts More Options", () => {
   it(
     "Send Sms Opt-In Email",
     {
+      tags: '@regression',
       retries: {
         runMode: 0,
         openMode: 0,
@@ -115,6 +121,7 @@ describe("Groups And Contacts More Options", () => {
   it(
     "Send Sms Opt-In Text",
     {
+      tags: '@regression',
       retries: {
         runMode: 0,
         openMode: 0,
@@ -132,6 +139,7 @@ describe("Groups And Contacts More Options", () => {
   it(
     "Export Sms Not Opted-In",
     {
+      tags: '@regression',
       retries: {
         runMode: 0,
         openMode: 0,
@@ -149,6 +157,7 @@ describe("Groups And Contacts More Options", () => {
   it(
     "Export Bad Contacts",
     {
+      tags: '@regression',
       retries: {
         runMode: 0,
         openMode: 0,
@@ -166,6 +175,7 @@ describe("Groups And Contacts More Options", () => {
   it(
     "Remove Bad Numbers",
     {
+      tags: '@regression',
       retries: {
         runMode: 0,
         openMode: 0,
@@ -183,6 +193,7 @@ describe("Groups And Contacts More Options", () => {
   it(
     "Delete All Contacts",
     {
+      tags: '@regression',
       retries: {
         runMode: 0,
         openMode: 0,
@@ -200,6 +211,7 @@ describe("Groups And Contacts More Options", () => {
   it(
     "Delete Group",
     {
+      tags: '@regression',
       retries: {
         runMode: 0,
         openMode: 0,

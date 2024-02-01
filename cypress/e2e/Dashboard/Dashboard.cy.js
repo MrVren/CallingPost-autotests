@@ -11,6 +11,7 @@ describe("Dashboard", () => {
   it(
     "C157: Left Menu",
     {
+      tags: '@smoke',
       retries: {
         runMode: 0,
         openMode: 0,
@@ -26,6 +27,7 @@ describe("Dashboard", () => {
   it(
     "C158: Notifications",
     {
+      tags: '@smoke',
       retries: {
         runMode: 0,
         openMode: 0,
@@ -41,6 +43,7 @@ describe("Dashboard", () => {
   it(
     "C159: Profile Menu & Profile Settings",
     {
+      tags: '@smoke',
       retries: {
         runMode: 0,
         openMode: 0,
@@ -56,6 +59,7 @@ describe("Dashboard", () => {
   it(
     "C160: System Settings",
     {
+      tags: '@smoke',
       retries: {
         runMode: 0,
         openMode: 0,
@@ -71,6 +75,7 @@ describe("Dashboard", () => {
   it(
     "C161: Account Managers",
     {
+      tags: '@smoke',
       retries: {
         runMode: 0,
         openMode: 0,

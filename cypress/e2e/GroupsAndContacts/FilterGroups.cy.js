@@ -14,6 +14,7 @@ describe("Groups And Contacts", () => {
   it(
     "Filter Group",
     {
+      tags: '@regression',
       retries: {
         runMode: 0,
         openMode: 0,

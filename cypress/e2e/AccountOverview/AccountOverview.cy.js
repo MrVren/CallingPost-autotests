@@ -15,6 +15,7 @@ describe("Account Overview", () => {
   it(
     "Open Premium Plan",
     {
+      tags: '@smoke',
       retries: {
         runMode: 0,
         openMode: 0,
@@ -29,6 +30,7 @@ describe("Account Overview", () => {
   it(
     "Open My Profile",
     {
+      tags: '@smoke',
       retries: {
         runMode: 0,
         openMode: 0,
@@ -44,6 +46,7 @@ describe("Account Overview", () => {
   it(
     "Open My Setting",
     {
+      tags: '@smoke',
       retries: {
         runMode: 0,
         openMode: 0,
@@ -59,6 +62,7 @@ describe("Account Overview", () => {
   it(
     "Open My Billing",
     {
+      tags: '@smoke',
       retries: {
         runMode: 0,
         openMode: 0,

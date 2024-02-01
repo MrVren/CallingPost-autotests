@@ -14,6 +14,7 @@ describe("Recent Groups", () => {
   it(
     "Create New Group",
     {
+      tags: '@regression',
       retries: {
         runMode: 0,
         openMode: 0,
@@ -28,6 +29,7 @@ describe("Recent Groups", () => {
   it(
     "See All Groups",
     {
+      tags: '@regression',
       retries: {
         runMode: 0,
         openMode: 0,
@@ -43,6 +45,7 @@ describe("Recent Groups", () => {
   it(
     "Open Group",
     {
+      tags: '@regression',
       retries: {
         runMode: 0,
         openMode: 0,

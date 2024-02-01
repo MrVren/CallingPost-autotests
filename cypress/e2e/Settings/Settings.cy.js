@@ -14,6 +14,7 @@ describe("Settings", () => {
   it(
     "Profile Icon",
     {
+      tags: '@regression',
       retries: {
         runMode: 0,
         openMode: 0,
@@ -28,6 +29,7 @@ describe("Settings", () => {
   it(
     "Profile Settings",
     {
+      tags: '@regression',
       retries: {
         runMode: 0,
         openMode: 0,
@@ -43,6 +45,7 @@ describe("Settings", () => {
   it(
     "Billing And Plans Settings",
     {
+      tags: '@regression',
       retries: {
         runMode: 0,
         openMode: 0,
@@ -58,6 +61,7 @@ describe("Settings", () => {
   it(
     "Call-In Settings",
     {
+      tags: '@regression',
       retries: {
         runMode: 0,
         openMode: 0,
@@ -73,6 +77,7 @@ describe("Settings", () => {
   it(
     "System Settings",
     {
+      tags: '@regression',
       retries: {
         runMode: 0,
         openMode: 0,
@@ -88,6 +93,7 @@ describe("Settings", () => {
   it(
     "Password/Login",
     {
+      tags: '@regression',
       retries: {
         runMode: 0,
         openMode: 0,
@@ -104,6 +110,7 @@ describe("Settings", () => {
   it(
     "Account Managers",
     {
+      tags: '@regression',
       retries: {
         runMode: 0,
         openMode: 0,
@@ -119,6 +126,7 @@ describe("Settings", () => {
   it(
     "Logout",
     {
+      tags: '@regression',
       retries: {
         runMode: 0,
         openMode: 0,

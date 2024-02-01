@@ -14,6 +14,7 @@ describe("System Settings", () => {
   it(
     "Edit System Settings",
     {
+      tags: '@regression',
       retries: {
         runMode: 0,
         openMode: 0,

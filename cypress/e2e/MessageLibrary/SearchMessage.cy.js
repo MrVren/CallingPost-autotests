@@ -14,6 +14,7 @@ describe("Message Library", () => {
   it(
     "Search Message",
     {
+      tags: '@regression',
       retries: {
         runMode: 0,
         openMode: 0,
