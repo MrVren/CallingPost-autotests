@@ -76,7 +76,11 @@ class Call_In {
   }
 
   DeletePaymentMethod() {
-    cy.get(selectors.noBorderBtn).eq(1).click();
+    cy.contains('div', '7890')
+    .parent()
+    .parent()
+    .find(selectors.noBorderBtn).eq(1)
+    .click()
     cy.wait(1000);
     cy.get(selectors.confirmDelete).click();
     cy.wait(1000);

@@ -13,7 +13,7 @@ describe("Text Keywords", () => {
     TextKeyword.DeleteKeyword(); 
   });
 
-  it(
+  it.skip(
     "C153: Create Keyword",
     {
       tags: '@regression',

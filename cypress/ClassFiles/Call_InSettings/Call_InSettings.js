@@ -9,7 +9,7 @@ class Call_In {
   }
 
   EditNumber() {
-    cy.get(selectors.editInput).eq(1).clear().type("6502081632");
+    cy.get(selectors.editInput).eq(1).clear().type(Cypress.env("username"));
   }
 
   SaveNumber() {

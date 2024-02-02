@@ -30,7 +30,7 @@ class ForgotUserId {
     cy.wait(500);
     cy.get(selectors.forgotUserIdBtn).click();
     cy.get(selectors.sendRecoveryEmailBtn).eq(1).click();
-    cy.url().should("eq", "https://test.callingpost.com/login")
+    cy.url().should("eq", `${Cypress.env("url")}/login`)
   }
 }
 

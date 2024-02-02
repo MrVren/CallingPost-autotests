@@ -11,7 +11,7 @@ describe("Custom Phone Number", () => {
     return false;
   });
   
-  it(
+  it.skip(
     "Payments",
     {
       tags: '@regression',

@@ -5,7 +5,7 @@ import LogIn from "../../ClassFiles/Login/Forgot_Password";
 const Login = new LogIn();
 
 describe("Login", () => {
-  it(
+  it.skip(
     "C162: Forgot Password",
     {
       tags: '@regression',

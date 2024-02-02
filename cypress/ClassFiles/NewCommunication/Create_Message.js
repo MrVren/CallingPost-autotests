@@ -10,19 +10,19 @@ class CreateVoiceMessage {
 
   SelectGroup() {
     cy.wait(3000);
-    cy.get(selectors.selectGroupInput).eq(0).click();
+    cy.get(selectors.selectGroupInput).eq(0).click({force: true});
     cy.wait(1000);
-    cy.get(selectors.selectGroup).eq(1).click();
+    cy.get(selectors.selectGroup).eq(1).click({force: true});
   }
 
   CreateVoiceMsg() {
     cy.wait(2000);
     cy.get('#mat-input-0')
       .clear({ force: true })
-      .type(`Test${Math.ceil(Math.random() * 999).toString()}`);
-      cy.get('#mat-checkbox-7').click()
+      .type(`Test${Math.ceil(Math.random() * 999).toString()}`, {force: true});
+      cy.get('#mat-checkbox-7').click({force: true})
     cy.wait(1000);
-    cy.get(selectors.createVoiceMsgBtn).click();
+    cy.get(selectors.createVoiceMsgBtn).click({force: true});
     cy.wait(2000);
     cy.get(selectors.selectGroupInput).eq(3).click();
     cy.wait(1000);
@@ -50,10 +50,10 @@ class CreateVoiceMessage {
     cy.wait(2000);
     cy.get('#mat-input-0')
       .clear({ force: true })
-      .type(`Test${Math.ceil(Math.random() * 999).toString()}`);
-    cy.get('#mat-checkbox-8').click()
+      .type(`Test${Math.ceil(Math.random() * 999).toString()}`, {force: true});
+    cy.get('#mat-checkbox-8').click({force: true})
     cy.wait(1000);
-    cy.get(selectors.createVoiceMsgBtn).click();
+    cy.get(selectors.createVoiceMsgBtn).click({force: true});
     cy.wait(1000);
     cy.get(selectors.textarea).eq(0).type("Hello");
     cy.wait(1000);
@@ -68,10 +68,10 @@ class CreateVoiceMessage {
     cy.wait(5000);
     cy.get('#mat-input-0')
       .clear({ force: true })
-      .type(`Test${Math.ceil(Math.random() * 999).toString()}`);
-    cy.get('#mat-checkbox-9').click()
+      .type(`Test${Math.ceil(Math.random() * 999).toString()}`, {force: true});
+    cy.get('#mat-checkbox-9').click({force: true})
     cy.wait(1000);
-    cy.get(selectors.createVoiceMsgBtn).click();
+    cy.get(selectors.createVoiceMsgBtn).click({force: true});
     cy.wait(1000);
     cy.get(selectors.emailSubjectInput).clear().type("CallingPost Test");
     cy.wait(1000);

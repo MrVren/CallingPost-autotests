@@ -28,7 +28,8 @@ class CreateMessage {
     cy.get(selectors.selectGroupInput).eq(1).click();
     cy.wait(500);
     cy.get(selectors.selectGroup).eq(0).click();
-    cy.get(selectors.sendMessageBtn).click();
+    cy.scrollTo("bottom")
+    cy.get(selectors.sendMessageBtn).click({force: true});
     cy.wait(2000);
   }
 
@@ -42,7 +43,8 @@ class CreateMessage {
     cy.get(selectors.nextButton).click()
     cy.wait(500);
     cy.get(selectors.textarea).eq(0).type("Hello");
-    cy.get(selectors.sendMessageBtn).click();
+    cy.scrollTo("bottom")
+    cy.get(selectors.sendMessageBtn).click({force: true});
     cy.wait(2000);
   }
 
@@ -60,7 +62,8 @@ class CreateMessage {
     cy.get(selectors.emailSubjectInput).clear().type("CallingPost Test");
     cy.wait(5000);
     cy.get('.template-predefines__predifine').eq(0).click();
-    cy.get(selectors.sendMessageBtn).click();
+    cy.scrollTo("bottom")
+    cy.get(selectors.sendMessageBtn).click({force: true});
     cy.get('.button--blue').click()
   }
 

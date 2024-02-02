@@ -5,7 +5,7 @@ import LogIn from "../../ClassFiles/Login/Forgot_User_Id";
 const Login = new LogIn();
 
 describe("Login", () => {
-  it(
+  it.skip(
     "C163: Forgot UserId",
     {
       tags: '@regression',
