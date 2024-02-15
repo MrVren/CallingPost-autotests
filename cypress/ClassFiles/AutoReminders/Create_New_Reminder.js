@@ -8,6 +8,8 @@ class CreateReminder {
 
   OpenAutoReminders() {
     cy.wait(5000);
+    cy.get(selectors.mobileToolbarBtn).click({force:true});
+    cy.wait(3000)
     cy.get(selectors.autoReminderBtn).click({ force: true });
   }
 

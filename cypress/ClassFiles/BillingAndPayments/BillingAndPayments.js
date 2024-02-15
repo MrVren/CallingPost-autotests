@@ -4,10 +4,9 @@ import selectors from "../../Selectors/BillingAndPayments/BillingAndPayments";
 
 class Call_In {
   OpenBilling() {
-    cy.wait(1000);
-    cy.get(selectors.profileMenuBtn).eq(14).click();
-    cy.wait(1000);
-    cy.get(selectors.profileSettingBtn).eq(13).click();
+    cy.get(selectors.mobileToolbarBtn).click({force:true});
+    cy.wait(3000);
+    cy.get(selectors.profileMenuBtn).eq(7).click({force:true});
     cy.wait(1000);
   }
 

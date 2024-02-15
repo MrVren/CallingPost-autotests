@@ -1,7 +1,8 @@
 /// <reference types="Cypress" />
 export default {
+  mobileToolbarBtn: ".button--grey",
   autoReminderBtn:
-    ":nth-child(11) > .mat-focus-indicator",
+    ".sidenav-wrapper > :nth-child(1) > :nth-child(6) > .mat-focus-indicator",
   createReminderBtn: "button.button--lime-green",
   reminderName: 'input[formcontrolname="reminderName"]',
   selectGroupInput: 'mat-select[formcontrolname="groupId"]',

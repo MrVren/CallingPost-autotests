@@ -1,8 +1,8 @@
 /// <reference types="Cypress" />
 export default {
-    premiumPlanBtn: 'a[href="/billing/details"]',
-    homeBtn:
-      ".sidenav-wrapper > :nth-child(1) > :nth-child(2) > .mat-focus-indicator",
-    linkBtn: ".link",
-  };
-  
+  mobileToolbarBtn: ".button--grey",
+  premiumPlanBtn: 'a[href="/billing/details"]',
+  homeBtn:
+    ".sidenav-content > :nth-child(3) > .mat-focus-indicator",
+  linkBtn: ".link",
+};

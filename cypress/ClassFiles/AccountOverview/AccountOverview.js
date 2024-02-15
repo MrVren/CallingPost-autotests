@@ -7,6 +7,8 @@ class AccountOverview {
     cy.wait(5000);
     cy.get(selectors.premiumPlanBtn).click();
     cy.wait(5000);
+    cy.get(selectors.mobileToolbarBtn).click({force:true});
+    cy.wait(3000)
     cy.get(selectors.homeBtn).click();
   }
 
@@ -14,6 +16,8 @@ class AccountOverview {
     cy.wait(1000);
     cy.get(selectors.linkBtn).eq(0).click();
     cy.wait(5000);
+    cy.get(selectors.mobileToolbarBtn).click({force:true});
+    cy.wait(3000);
     cy.get(selectors.homeBtn).click();
   }
 
@@ -21,6 +25,8 @@ class AccountOverview {
     cy.wait(1000);
     cy.get(selectors.linkBtn).eq(1).click();
     cy.wait(5000);
+    cy.get(selectors.mobileToolbarBtn).click({force:true});
+    cy.wait(3000);
     cy.get(selectors.homeBtn).click();
   }
 
@@ -28,6 +34,8 @@ class AccountOverview {
     cy.wait(1000);
     cy.get(selectors.linkBtn).eq(2).click();
     cy.wait(5000);
+    cy.get(selectors.mobileToolbarBtn).click({force:true});
+    cy.wait(3000);
     cy.get(selectors.homeBtn).click();
   }
 }
