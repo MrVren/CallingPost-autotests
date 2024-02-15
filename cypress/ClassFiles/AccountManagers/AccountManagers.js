@@ -5,9 +5,9 @@ import selectors from "../../Selectors/AccountManagers/AccountManagers";
 class AccountManager {
   OpenAccountManagers() {
     cy.wait(5000);
-    cy.get(selectors.profileMenuBtn).eq(14).click();
-    cy.wait(1000);
-    cy.get(selectors.profileSettingBtn).eq(17).click();
+    cy.get(selectors.mobileToolbarBtn).click({force:true});
+    cy.wait(5000);
+    cy.get(selectors.profileMenuBtn).eq(11).click({force:true});   
     cy.wait(5000);
   }
 

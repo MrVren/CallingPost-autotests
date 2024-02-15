@@ -10,7 +10,10 @@ describe("Account Managers", () => {
   Cypress.on("uncaught:exception", (err, runnable) => {
     return false;
   });
-  
+  //beforeEach(() => {
+    //cy.viewport('iphone-xr','portrait')
+
+  //})
   it(
     "Edit Account Managers",
     {
@@ -29,4 +32,5 @@ describe("Account Managers", () => {
       AccountsManager.CancelInvite();
     }
   );
-});
+})
+
