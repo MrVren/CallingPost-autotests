@@ -1,5 +1,8 @@
 /// <reference types="Cypress" />
 export default {
+  ADDRESS: "#mat-expansion-panel-header-3",
+  EMAIL: "#mat-expansion-panel-header-4",
+  mobileToolbarBtn: ".button--grey",
   menuBtn: "button.menu-toggle-button",
   profileMenuBtn: "button.mat-focus-indicator.mat-icon-button.mat-button-base", // use eq 14
   profileSettingBtn: "app-menu-item", // use eq 13

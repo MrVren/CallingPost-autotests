@@ -12,7 +12,7 @@ class Call_In {
 
   AddBankAccount() {
     cy.wait(1000);
-    cy.get(selectors.addNewPaymentBtn).eq(0).click();
+    cy.get(selectors.addNewPaymentBtn).eq(1).click();
     cy.wait(1000);
     cy.get(selectors.paymentTabs).eq(1).click();
     cy.wait(1000);
@@ -26,7 +26,7 @@ class Call_In {
 
   AddNewPaymentMethod() {
     cy.wait(1000);
-    cy.get(selectors.addNewPaymentBtn).eq(0).click();
+    cy.get(selectors.addNewPaymentBtn).eq(1).click();
     cy.wait(1000);
     cy.get(selectors.cardNumInput).clear().type("374245455400126");
     cy.get(selectors.dateInput).clear().type("0526");
@@ -124,10 +124,10 @@ class Call_In {
 
   UpgradePlan() {
     cy.wait(1000);
-    cy.get(selectors.profileMenuBtn).eq(14).click();
-    cy.wait(1000);
-    cy.get(selectors.profileSettingBtn).eq(13).click();
-    cy.wait(1000);
+    cy.get(selectors.mobileToolbarBtn).click({force:true});
+    cy.wait(3000);
+    cy.get(selectors.profileMenuBtn).eq(7).click({force:true});
+    cy.wait(2000);
     cy.get(selectors.changePlanBtn).eq(0).click();
     cy.wait(1000);
     cy.get(selectors.extendBtn).click();

@@ -1,11 +1,12 @@
 /// <reference types="Cypress" />
 export default {
+  mobileToolbarBtn: ".button--grey",
   homeBtn:
-    ".sidenav-wrapper > :nth-child(1) > :nth-child(2) > .mat-focus-indicator",
+    "button.mat-focus-indicator.mat-icon-button.mat-button-base",
   linkBtn: ".link",
   groupInput: 'input[placeholder="Group Name (required)"]',
   selectInput: ".mat-select-trigger",
   selectOption: ".mat-option-text",
   saveGroup: "button._create",
-  OpenGroup: ".mat-row",
+  OpenGroup: ":nth-child(1) > .message-list-header",
 };

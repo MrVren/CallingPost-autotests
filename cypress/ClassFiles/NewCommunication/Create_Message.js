@@ -4,13 +4,14 @@ import selectors from "../../Selectors/NewCommunication/CreateMessage";
 
 class CreateVoiceMessage {
   OpenNewCommunication() {
+    cy.get(selectors.mobileToolbarBtn).click({force: true})
     cy.wait(5000);
-    cy.get(selectors.newCommunicationBtn).click({ force: true });
+    cy.get(selectors.newCommunicationBtn).eq(1).click({ force: true });
   }
 
   SelectGroup() {
     cy.wait(3000);
-    cy.get(selectors.selectGroupInput).eq(0).click({force: true});
+    cy.get(selectors.selectGroupInput).eq(0).click();
     cy.wait(1000);
     cy.get(selectors.selectGroup).eq(1).click({force: true});
   }
@@ -20,7 +21,7 @@ class CreateVoiceMessage {
     cy.get('#mat-input-0')
       .clear({ force: true })
       .type(`Test${Math.ceil(Math.random() * 999).toString()}`, {force: true});
-      cy.get('#mat-checkbox-7').click({force: true})
+      cy.get('#mat-checkbox-5').click({force: true})
     cy.wait(1000);
     cy.get(selectors.createVoiceMsgBtn).click({force: true});
     cy.wait(2000);
@@ -38,7 +39,7 @@ class CreateVoiceMessage {
 
     cy.get(selectors.createVoiceMsgBtn).click();
     cy.wait(1000);
-    cy.get('#mat-checkbox-10').click()
+    cy.get('#mat-checkbox-8').click()
     cy.wait(1000);
     cy.get(selectors.createVoiceMsgBtn).click();
     cy.wait(5000);
@@ -51,7 +52,7 @@ class CreateVoiceMessage {
     cy.get('#mat-input-0')
       .clear({ force: true })
       .type(`Test${Math.ceil(Math.random() * 999).toString()}`, {force: true});
-    cy.get('#mat-checkbox-8').click({force: true})
+    cy.get('#mat-checkbox-6').click({force: true})
     cy.wait(1000);
     cy.get(selectors.createVoiceMsgBtn).click({force: true});
     cy.wait(1000);
@@ -59,7 +60,7 @@ class CreateVoiceMessage {
     cy.wait(1000);
     cy.get(selectors.createVoiceMsgBtn).click();
     cy.wait(1000);
-    cy.get('#mat-checkbox-10').click()
+    cy.get('#mat-checkbox-8').click()
     cy.wait(1000);
     cy.get('.user-message-action').eq(1).click();
   }
@@ -69,7 +70,7 @@ class CreateVoiceMessage {
     cy.get('#mat-input-0')
       .clear({ force: true })
       .type(`Test${Math.ceil(Math.random() * 999).toString()}`, {force: true});
-    cy.get('#mat-checkbox-9').click({force: true})
+    cy.get(selectors.emailOption).click({force: true})
     cy.wait(1000);
     cy.get(selectors.createVoiceMsgBtn).click({force: true});
     cy.wait(1000);
@@ -79,7 +80,7 @@ class CreateVoiceMessage {
     cy.wait(5000);
     cy.get(selectors.createVoiceMsgBtn).click();
     cy.wait(1000);
-    cy.get('#mat-checkbox-13').click()
+    cy.get('#mat-checkbox-11').click()
     cy.get(selectors.createVoiceMsgBtn).click();
     cy.wait(8000);
     cy.get(selectors.sendMessageBtn).eq(0).click();
@@ -113,7 +114,7 @@ class CreateVoiceMessage {
     cy.get(selectors.createVoiceMsgBtn).click()
     cy.wait(1000);
     cy.get(selectors.createVoiceMsgBtn).click()
-    cy.get('#mat-checkbox-10').click()
+    cy.get('#mat-checkbox-8').click()
     cy.get('#mat-radio-5').click();
     cy.wait(3000);
     cy.get(selectors.createVoiceMsgBtn).click()

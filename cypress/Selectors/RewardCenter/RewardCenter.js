@@ -1,7 +1,8 @@
 /// <reference types="Cypress" />
 export default {
+  mobileToolbarBtn: ".button--grey",
   rewardCenterBtn:
-    ".sidenav-wrapper > :nth-child(2) > :nth-child(2) > .mat-focus-indicator",
+  "button.mat-focus-indicator.mat-icon-button.mat-button-base",
   rewardCards: "div.frame-tile",
   referInput: "textarea",
   sendBtn: "button.button--lime-green",

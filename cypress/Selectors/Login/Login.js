@@ -7,6 +7,7 @@ export default {
   invalidAlert: "div.alert-danger.ng-star-inserted",
 
   //   Forgot User Id
+  userId: 'input[type="text"]',
   forgotUserIdBtn: 'a[routerlink="/recover-user-id"]',
   emailInput: 'input[type="text"]',
   sendRecoveryEmailBtn: 'button[color="primary"]', // use eq 1

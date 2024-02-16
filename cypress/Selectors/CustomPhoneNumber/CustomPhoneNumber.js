@@ -1,6 +1,7 @@
 /// <reference types="Cypress" />
 export default {
-  customNumberBtn: ":nth-child(10) > .mat-focus-indicator",
+  mobileToolbarBtn: ".button--grey",
+  customNumberBtn: ":nth-child(5) > .mat-focus-indicator",
   addPhoneNumber: ".btn-success",
   createTollFree: ".mat-card-actions > .btn",
   createVanityNumber: "#mat-tab-label-0-1",

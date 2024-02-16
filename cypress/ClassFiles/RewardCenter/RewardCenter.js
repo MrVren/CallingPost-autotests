@@ -4,12 +4,14 @@ import selectors from "../../Selectors/RewardCenter/RewardCenter";
 
 class RewardCenter {
   OpenRewardCenter() {
-    cy.wait(1000);
-    cy.get(selectors.rewardCenterBtn).click({ force: true });
+    cy.get(selectors.mobileToolbarBtn).click({force: true});
+    cy.wait(3000);
+    cy.get(selectors.rewardCenterBtn).eq(17).click({ force: true });
   }
 
   OpenReferFriend() {
-    cy.wait(1000);
+    cy.get(selectors.mobileToolbarBtn).click({force: true});
+    cy.wait(3000);
     cy.get(selectors.rewardCards).eq(0).click();
   }
 

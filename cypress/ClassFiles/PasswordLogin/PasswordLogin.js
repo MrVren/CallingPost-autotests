@@ -5,9 +5,9 @@ import selectors from "../../Selectors/PasswordLogin/PasswordLogin";
 class Settings {
   OpenPasswords() {
     cy.wait(5000);
-    cy.get(selectors.profileMenuBtn).eq(14).click();
-    cy.wait(1000);
-    cy.get(selectors.profileSettingBtn).eq(16).click();
+    cy.get(selectors.mobileToolbarBtn).click({force: true});
+    cy.wait(2000);
+    cy.get(selectors.profileMenuBtn).eq(10).click({force: true});
     cy.wait(2000);
   }
 

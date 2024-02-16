@@ -1,7 +1,8 @@
 /// <reference types="Cypress" />
 export default {
+  mobileToolbarBtn: ".button--grey",
   statusAndResultBtn:
-    ".sidenav-wrapper > :nth-child(1) > :nth-child(5) > .mat-focus-indicator",
+    "button.mat-focus-indicator.mat-icon-button.mat-button-base",
   searchIcon: "button.mat-mini-fab",
   searchInput: "input.mat-input-element",
   filterRadio: ".mat-radio-input",

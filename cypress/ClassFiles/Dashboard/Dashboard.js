@@ -5,7 +5,7 @@ import selectors from "../../Selectors/Dashboard/Dashboard";
 class GroupsAndContacts {
   MenuBtn() {
     cy.wait(1000);
-    cy.get(selectors.menuBtn).click();
+    cy.get(selectors.mobileToolbarBtn).click({force:true});
   }
 
   OpenNotifications() {
@@ -15,20 +15,23 @@ class GroupsAndContacts {
 
   OpenProfileSettings() {
     cy.wait(1000);
-    cy.get(selectors.profileMenuBtn).eq(14).click();
-    cy.get(selectors.profileSettingBtn).eq(12).click();
+    cy.get(selectors.mobileToolbarBtn).click({force:true});
+    cy.wait(3000)
+    cy.get(selectors.profileMenuBtn).eq(6).click({force:true});
   }
 
   OpenSystemSettings() {
     cy.wait(1000);
-    cy.get(selectors.profileMenuBtn).eq(14).click();
-    cy.get(selectors.profileSettingBtn).eq(15).click();
+    cy.get(selectors.mobileToolbarBtn).click({force:true});
+    cy.wait(3000)
+    cy.get(selectors.profileMenuBtn).eq(9).click({force:true});
   }
 
   OpenPasswords() {
     cy.wait(1000);
-    cy.get(selectors.profileMenuBtn).eq(14).click();
-    cy.get(selectors.profileSettingBtn).eq(16).click();
+    cy.get(selectors.mobileToolbarBtn).click({force:true});
+    cy.wait(3000)
+    cy.get(selectors.profileMenuBtn).eq(10).click({force:true});
   }
 
   EnterPassword() {
@@ -40,8 +43,9 @@ class GroupsAndContacts {
 
   OpenAccountManagers() {
     cy.wait(1000);
-    cy.get(selectors.profileMenuBtn).eq(14).click();
-    cy.get(selectors.profileSettingBtn).eq(17).click();
+    cy.get(selectors.mobileToolbarBtn).click({force:true});
+    cy.wait(3000)
+    cy.get(selectors.profileMenuBtn).eq(11).click({force:true});
   }
 }
 

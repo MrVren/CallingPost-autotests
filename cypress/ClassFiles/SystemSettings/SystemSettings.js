@@ -5,23 +5,23 @@ import selectors from "../../Selectors/SystemSettings/SystemSettings";
 class Call_In {
   OpenSystemSettings() {
     cy.wait(5000);
-    cy.get(selectors.profileMenuBtn).eq(14).click();
-    cy.wait(1000);
-    cy.get(selectors.profileSettingBtn).eq(15).click();
+    cy.get(selectors.mobileToolbarBtn).click({force:true});
+    cy.wait(3000);
+    cy.get(selectors.profileMenuBtn).eq(9).click({force: true});
     cy.wait(5000);
   }
 
   EditCommunicationSettings() {
     cy.wait(1000);
-    cy.get(selectors.expandHeader).eq(0).click();
+    cy.get(selectors.expandHeader).eq(0).click({force: true});
     cy.wait(1000);
-    cy.get(selectors.selectInput).eq(0).click();
+    cy.get(selectors.selectInput).eq(0).click({force: true});
     cy.wait(1000);
-    cy.get(selectors.selectOption).eq(0).click();
+    cy.get(selectors.selectOption).eq(0).click({force: true});
     cy.wait(1000);
-    cy.get(selectors.selectInput).eq(1).click();
+    cy.get(selectors.selectInput).eq(1).click({force: true});
     cy.wait(1000);
-    cy.get(selectors.selectOption).eq(0).click();
+    cy.get(selectors.selectOption).eq(0).click({force: true});
     cy.wait(3000);
     cy.get(selectors.checkbox).eq(0).check({force:true});
     cy.wait(1000);
@@ -29,7 +29,7 @@ class Call_In {
 
   EditContactSettings() {
     cy.wait(1000);
-    cy.get(selectors.expandHeader).eq(1).click();
+    cy.get(selectors.expandHeader).eq(1).click({force: true});
     cy.wait(1000);
     cy.get(selectors.checkbox).eq(1).check({force:true});
     cy.wait(1000);
@@ -39,7 +39,7 @@ class Call_In {
 
   EditExtraSettings() {
     cy.wait(1000);
-    cy.get(selectors.expandHeader).eq(2).click();
+    cy.get(selectors.expandHeader).eq(2).click({force: true});
     cy.wait(1000);
     cy.get(selectors.checkbox).eq(3).check({force:true});
     cy.wait(1000);

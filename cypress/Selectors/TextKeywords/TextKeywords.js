@@ -1,7 +1,8 @@
 /// <reference types="Cypress" />
 export default {
+  mobileToolbarBtn: ".button--grey",
   textKeywordBtn:
-    ".sidenav-wrapper > :nth-child(1) > :nth-child(8) > .mat-focus-indicator",
+    "button.mat-focus-indicator.mat-icon-button.mat-button-base",
   createKeywordBtn: "button.button--rounded",
   keywordNameInput: 'input[placeholder="Enter keyword here."]',
   paymentInput: 'mat-select[formcontrolname="paymentProfileID"]',

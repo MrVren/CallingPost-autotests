@@ -39,7 +39,8 @@ class RecentCommunications {
   }
 
   EnterEmail() {
-    cy.wait(1000);
+    cy.get(selectors.SHARE).click({force: true});
+    cy.wait(2000);
     cy.get(selectors.referInput).clear().type("Email@gmail.com");
   }
 
@@ -51,7 +52,7 @@ class RecentCommunications {
 
   OpenCommunicationDetails() {
     cy.wait(1000);
-    cy.get(selectors.communicationTable).eq(-1).children().eq(0).click();
+    cy.get(selectors.communicationTable).click({force: true});
   }
 }
 

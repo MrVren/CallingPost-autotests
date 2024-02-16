@@ -4,11 +4,11 @@ import selectors from "../../Selectors/Footer/Footer";
 
 class Footer {
   OpenFeedback() {
-    cy.get(selectors.feedback).should("have.text", " Feedback ")
+    cy.get(selectors.feedback).should("have.text", " FEEDBACK  Feedback ")
   }
 
   OpenTermsOfService() {
-    cy.get(selectors.termsOfService).should("have.text", "Terms of Service")
+    cy.get(selectors.termsOfService).should("have.text", "TERMS OF SERVICETerms of Service")
   }
 
   OpenHelpCenter() {
@@ -16,7 +16,7 @@ class Footer {
   }
 
   OpenPrivacyPolicy() {
-    cy.get(selectors.privacyPolicy).should("have.text", "Privacy Policy")
+    cy.get(selectors.privacyPolicy).should("have.text", "PRIVACY POLICYPrivacy Policy")
   }
 }
 

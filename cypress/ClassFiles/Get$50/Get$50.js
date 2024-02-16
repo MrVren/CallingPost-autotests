@@ -4,7 +4,9 @@ import selectors from "../../Selectors/Get$50/Get$50";
 
 class Get$50 {
   OpenGet$50() {
-    cy.get(selectors.get$50).eq(10).click();
+    cy.get(selectors.mobileToolbarBtn).click({force:true});
+    cy.wait(3000);
+    cy.get(selectors.get$50).eq(17).click({force:true});
   }
 
   OpenRewardCenter() {
@@ -16,10 +18,12 @@ class Get$50 {
   }
 
   EnterEmail() {
+    cy.get(selectors.referFriend).eq(0).click()
     cy.get(selectors.referInput).clear().type("Email@gmail.com");
   }
 
   EnterMultipleEmails() {
+    cy.get(selectors.referFriend).eq(0).click()
     cy.get(selectors.referInput)
       .clear()
       .type("Email@gmail.com,Email@gmail.com,Email@gmail.com,Email@gmail.com");

@@ -5,7 +5,9 @@ import selectors from "../../Selectors/StatusAndResults/StatusAndResults";
 class StatusAndResult {
   OpenStatusAndResult() {
     cy.wait(4000);
-    cy.get(selectors.statusAndResultBtn).click({ force: true });
+    cy.get(selectors.mobileToolbarBtn).click({force:true});
+    cy.wait(3000);
+    cy.get(selectors.statusAndResultBtn).eq(3).click({ force: true });
   }
 
   SearchMessage() {
@@ -17,6 +19,9 @@ class StatusAndResult {
 
   FilterMessage() {
     cy.wait(1000);
+    cy.get(selectors.mobileToolbarBtn).click({force:true});
+    cy.wait(3000);
+    cy.get(selectors.statusAndResultBtn).eq(3).click({ force: true });
     cy.get(selectors.searchIcon).eq(1).click();
     cy.wait(1000);
     cy.get(selectors.filterRadio).eq(1).click({ force: true });
