@@ -1,14 +1,15 @@
 /// <reference types="Cypress" />
 export default {
+  mobileToolbarBtn: ".button--grey",
   MessageLibraryBtn:
-    ".sidenav-wrapper > :nth-child(1) > :nth-child(6) > .mat-focus-indicator", // use eq accordingly
-  createNewMsgBtn: 'button[type="button"]',
+    "button.mat-focus-indicator.mat-icon-button.mat-button-base", // use eq accordingly
+  createNewMsgBtn: 'div.ng-star-inserted > .mat-focus-indicator',
   messageName: 'input[formcontrolname="messageName"]',
   selectGroupInput: "mat-form-field.mat-form-field", // use eq accordingly
   selectGroup: ".mat-option-text", // use eq accordingly
-  selectVoiceMsgBtn: '#mat-checkbox-3 > .mat-checkbox-layout > .mat-checkbox-inner-container',
-  selectEmailMsgBtn: '#mat-checkbox-5 > .mat-checkbox-layout > .mat-checkbox-inner-container',
-  selectTextMsgBtn: '#mat-checkbox-4 > .mat-checkbox-layout > .mat-checkbox-inner-container',
+  selectVoiceMsgBtn: '#mat-checkbox-1 > .mat-checkbox-layout > .mat-checkbox-inner-container',
+  selectEmailMsgBtn: '#mat-checkbox-3 > .mat-checkbox-layout > .mat-checkbox-inner-container',
+  selectTextMsgBtn: '#mat-checkbox-2 > .mat-checkbox-layout > .mat-checkbox-inner-container',
   nextButton: '.--next',
   addCallerIdBtn: '.btn-create-caller-ids',
   createVoiceMsgBtn: 'button[color="primary"]',
@@ -16,7 +17,7 @@ export default {
   checkbox: 'input[type="checkbox"]',
   sendMessageBtn: ".--next",
   emailSubjectInput: '[id="mat-input-1"]',
-  messageTable: "table tbody",
+  messageTable: "app-message-list-mobile.ng-star-inserted",
   saveEditMsg: "button.button--lime-green",
   confirmDel: "button.button--blue",
   discardMessage: ".button-primary-inverted",

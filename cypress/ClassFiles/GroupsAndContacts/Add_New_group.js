@@ -4,7 +4,9 @@ import selectors from "../../Selectors/GroupsAndContacts/Add_New_group";
 
 class GroupsAndContacts {
   OpenGroups() {
-    cy.get(selectors.groupsAndContactsBtn).click({ force: true });
+    cy.get(selectors.mobileToolbarBtn).click({force:true});
+    cy.wait(3000);
+    cy.get(selectors.groupsAndContactsBtn).eq(2).click({ force: true });
   }
 
   OpenAllContacts() {
@@ -50,16 +52,15 @@ class GroupsAndContacts {
 
   SelectGroup() {
     cy.wait(1000)
-    cy.get(selectors.tableRow).eq(0).scrollIntoView();
-    cy.get(selectors.tableRow).eq(-1).click()
-    cy.wait(60000)
+    cy.get(selectors.testGroup).click();
+    cy.wait(1000);
+    cy.wait(6000)
   }
 
   SelectLastGroup() {
     cy.wait(4000);
-    cy.get(selectors.tableRow).eq(-1).scrollIntoView();
-    cy.wait(1000);
-    cy.get(selectors.tableRow).eq(-1).click();
+    cy.get(selectors.testGroup).click();
+    cy.wait(1000)
   }
 
   NewCommunication() {
@@ -68,8 +69,8 @@ class GroupsAndContacts {
 
   AddContacts() {
     cy.wait(1000);
-    cy.get(selectors.tableRow).eq(-1).click();
-    cy.wait(60000);
+    cy.get(selectors.testGroup).click();
+    cy.wait(6000);
     cy.get(selectors.addContactBtn).click();
     cy.wait(1000);
     cy.get(selectors.cancelBtn).click();
@@ -86,21 +87,17 @@ class GroupsAndContacts {
 
   DeleteContact() {
     cy.wait(2000);
-    cy.get(selectors.tableRow).eq(-1).scrollIntoView();
-    cy.wait(1000);
-    cy.get(selectors.tableRow).eq(-1).click();
-    cy.wait(60000);
-    cy.get(selectors.delContact).eq(1).click();
+    cy.get(selectors.testGroup).click();
+    cy.wait(6000);
+    cy.get(selectors.deleteIcon).eq(1).click();
     cy.wait(1000);
     cy.get(selectors.confirmDel).click();
   }
 
   EditGroup() {
     cy.wait(2000);
-    cy.get(selectors.tableRow).eq(-1).scrollIntoView();
-    cy.wait(1000);
-    cy.get(selectors.tableRow).eq(-1).click();
-    cy.wait(60000);
+    cy.get(selectors.testGroup).click();
+    cy.wait(6000);
     cy.get(selectors.moreOptionsBtn).click();
     cy.wait(1000);
     cy.get(selectors.menuOptions).eq(2).click();
@@ -113,10 +110,8 @@ class GroupsAndContacts {
 
   DeleteGroup() {
     cy.wait(2000);
-    cy.get(selectors.tableRow).eq(-1).scrollIntoView();
-    cy.wait(1000);
-    cy.get(selectors.tableRow).eq(-1).click();
-    cy.wait(60000);
+    cy.get(selectors.testGroup).click();
+    cy.wait(6000);
     cy.get(selectors.moreOptionsBtn).click();
     cy.wait(1000);
     cy.get(selectors.menuOptions).eq(-1).click();
@@ -181,10 +176,8 @@ class GroupsAndContacts {
 
   AddContact() {
     cy.wait(2000);
-    cy.get(selectors.tableRow).eq(-1).scrollIntoView();
-    cy.wait(1000);
-    cy.get(selectors.tableRow).eq(-1).click();
-    cy.wait(60000);
+    cy.get(selectors.testGroup).click();
+    cy.wait(6000);
     cy.get(selectors.addContact).click();
     cy.wait(1000);
     cy.get(selectors.addExisting).click();
@@ -196,12 +189,12 @@ class GroupsAndContacts {
   }
 
   EditTextKeyword() {
-    cy.wait(60000)
+    cy.wait(6000)
     cy.get(selectors.editKeyword).click();
   }
 
   Print() {
-    cy.wait(60000)
+    cy.wait(6000)
     cy.get(selectors.moreOptionsBtn).click();
     cy.wait(1000);
     cy.get(selectors.menuOptions).eq(0).click();
@@ -209,7 +202,7 @@ class GroupsAndContacts {
   }
 
   Export() {
-    cy.wait(60000)
+    cy.wait(6000)
     cy.get(selectors.moreOptionsBtn).click();
     cy.wait(1000);
     cy.get(selectors.menuOptions).eq(1).click();
@@ -217,7 +210,7 @@ class GroupsAndContacts {
   }
 
   EditGroupName() {
-    cy.wait(60000)
+    cy.wait(6000)
     cy.get(selectors.moreOptionsBtn).click();
     cy.wait(1000);
     cy.get(selectors.menuOptions).eq(2).click();
@@ -229,7 +222,7 @@ class GroupsAndContacts {
   }
 
   DeactivateContacts() {
-    cy.wait(60000)
+    cy.wait(6000)
     cy.get(selectors.moreOptionsBtn).click();
     cy.wait(1000);
     cy.get(selectors.menuOptions).eq(4).click();
@@ -239,7 +232,7 @@ class GroupsAndContacts {
   }
 
   ActivateContacts() {
-    cy.wait(60000)
+    cy.wait(6000)
     cy.get(selectors.moreOptionsBtn).click();
     cy.wait(1000);
     cy.get(selectors.menuOptions).eq(3).click();
@@ -249,7 +242,7 @@ class GroupsAndContacts {
   }
 
   SmsOptEmail() {
-    cy.wait(60000)
+    cy.wait(6000)
     cy.get(selectors.moreOptionsBtn).click();
     cy.wait(1000);
     cy.get(selectors.menuOptions).eq(6).click();
@@ -260,7 +253,7 @@ class GroupsAndContacts {
   }
 
   SmsOptText() {
-    cy.wait(60000)
+    cy.wait(6000)
     cy.get(selectors.moreOptionsBtn).click();
     cy.wait(1000);
     cy.get(selectors.menuOptions).eq(6).click();
@@ -271,7 +264,7 @@ class GroupsAndContacts {
   }
 
   ExportSmsNonOpt() {
-    cy.wait(60000)
+    cy.wait(6000)
     cy.get(selectors.moreOptionsBtn).click();
     cy.wait(1000);
     cy.get(selectors.menuOptions).eq(7).click();
@@ -279,7 +272,7 @@ class GroupsAndContacts {
   }
 
   ExportBadContacts() {
-    cy.wait(60000)
+    cy.wait(6000)
     cy.get(selectors.moreOptionsBtn).click();
     cy.wait(1000);
     cy.get(selectors.menuOptions).eq(8).click();
@@ -287,7 +280,7 @@ class GroupsAndContacts {
   }
 
   RemoveBadNumbers() {
-    cy.wait(60000)
+    cy.wait(6000)
     cy.get(selectors.moreOptionsBtn).click();
     cy.wait(1000);
     cy.get(selectors.menuOptions).eq(9).click();
@@ -310,11 +303,10 @@ class GroupsAndContacts {
 
   AddContactManually() {
     cy.wait(5000)
-    cy.get(selectors.tableRow).eq(-1).scrollIntoView();
-    cy.get(selectors.tableRow).eq(-1).click();
-    cy.get(selectors.addContact).click();
-    cy.contains(selectors.addManually).click();
-    cy.get(selectors.addManuallyOption).eq(0).click();
+    cy.get(selectors.testGroup).click();
+    cy.wait(1000);
+    cy.get(selectors.addManually).click();
+    cy.get(selectors.addManuallyOption).click()
     cy.wait(500)
     //cy.get(selectors.selectFilterOption).eq(0).click();
     cy.get(selectors.addManuallyInputs).eq(1).type(`Kristen${Math.ceil(Math.random() * 999999).toString()}`);
@@ -348,7 +340,7 @@ class GroupsAndContacts {
   }
 
   DeleteAllContacts() {
-    cy.wait(60000)
+    cy.wait(6000)
     cy.get(selectors.moreOptionsBtn).click();
     cy.wait(1000);
     cy.get(selectors.menuOptions).eq(8).click();

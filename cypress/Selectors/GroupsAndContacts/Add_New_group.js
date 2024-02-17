@@ -1,7 +1,9 @@
 /// <reference types="Cypress" />
 export default {
+  testGroup: ".groups-dropdown > :nth-child(2)",
+  mobileToolbarBtn: ".button--grey",
   groupsAndContactsBtn:
-    ".sidenav-wrapper > :nth-child(1) > :nth-child(4) > .mat-focus-indicator",
+    "button.mat-focus-indicator.mat-icon-button.mat-button-base",
   createGroupBtn: 'button[type="type"]',
   groupNameInput: 'input[placeholder="Group Name (required)"]',
   saveGrpBtn: "button.mat-raised-button", // use eq 0
@@ -31,7 +33,7 @@ export default {
   moreOptionsBtn: 'button[aria-label="More Menu"]',
   menuOptions: 'button[role="menuitem"]',
   removeBadNumber: '.btn.__confirm',
-  addManually: 'Add New Contact', // use .contains
+  addManually: '.left-btn-group > .btn-search-field', // use .contains
   addManuallyOption: '[mat-dialog-close="add-manually"]',
   addManuallyInputs: '.mat-form-field-infix',
   allContactsTab: 'div[role="tab"]', // use eq 1
@@ -40,7 +42,7 @@ export default {
   discardBtn: 'button[color="primary"]',
   closeModalBtn: 'span.close',
   toggleBtn: '.mat-slide-toggle',
-  deleteIcon: '.warn-icon',
+  deleteIcon: '[aria-label="member-delete"]',
   deleteContact: '._border',
 
 

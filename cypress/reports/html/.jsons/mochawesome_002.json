@@ -1,0 +1,109 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2024-02-17T11:43:37.320Z",
+    "end": "2024-02-17T11:43:52.541Z",
+    "duration": 15221,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "3f5596f2-a5b2-439a-8833-447924c80efb",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Call_InSettings\\Call_InSettings.cy.js",
+      "file": "cypress\\e2e\\Call_InSettings\\Call_InSettings.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "ab2373ce-11ef-436d-a803-d83a64b98bd7",
+          "title": "Call-In Settings",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Edit Call-In Settings",
+              "fullTitle": "Call-In Settings Edit Call-In Settings",
+              "timedOut": null,
+              "duration": 15176,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\Call_InSettings\\\\Call_InSettings.cy.js\\\\Call-In Settings -- Edit Call-In Settings (failed).png\"\n    ]\n  ]\n}",
+              "code": "Login.ValidLogin();\nCall_In.OpenCallIn();\nCall_In.EditNumber();\nCall_In.SaveNumber();\nCall_In.CheckNotification();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.button--grey`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.button--grey`, but never found it.\n    at Call_In.OpenCallIn (webpack://calling-post-automation/./cypress/ClassFiles/Call_InSettings/Call_InSettings.js:7:7)\n    at Context.eval (webpack://calling-post-automation/./cypress/e2e/Call_InSettings/Call_InSettings.cy.js:25:14)",
+                "diff": null
+              },
+              "uuid": "388173b6-45dc-4e36-8824-af043194fbee",
+              "parentUUID": "ab2373ce-11ef-436d-a803-d83a64b98bd7",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "388173b6-45dc-4e36-8824-af043194fbee"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 15176,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

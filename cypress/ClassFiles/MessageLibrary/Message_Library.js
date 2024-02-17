@@ -5,12 +5,14 @@ import selectors from "../../Selectors/MessageLibrary/MessageLibrary";
 class CreateMessage {
   OpenMessageLibrary() {
     cy.wait(500);
-    cy.get(selectors.MessageLibraryBtn).click({ force: true });
+    cy.get(selectors.mobileToolbarBtn).click({force:true});
+    cy.wait(3000);
+    cy.get(selectors.MessageLibraryBtn).eq(4).click({ force: true });
   }
 
   CreateVoiceMsg(name = `Test${Math.ceil(Math.random() * 999).toString()}`) {
     cy.wait(2000);
-    cy.get(selectors.createNewMsgBtn).eq(0).click();
+    cy.get(selectors.createNewMsgBtn).click();
     cy.wait(500);
     cy.get(selectors.messageName).clear().type(name);
     cy.wait(500);
@@ -35,7 +37,7 @@ class CreateMessage {
 
   CreateTextMessage(name = `Test${Math.ceil(Math.random() * 999).toString()}`) {
     cy.wait(2000);
-    cy.get(selectors.createNewMsgBtn).eq(0).click();
+    cy.get(selectors.createNewMsgBtn).click();
     cy.wait(500);
     cy.get(selectors.messageName).clear().type(name);
     cy.wait(500);
@@ -52,7 +54,7 @@ class CreateMessage {
     name = `Test${Math.ceil(Math.random() * 999).toString()}`
   ) {
     cy.wait(4000);
-    cy.get(selectors.createNewMsgBtn).eq(0).click();
+    cy.get(selectors.createNewMsgBtn).click();
     cy.wait(3000);
     cy.get(selectors.messageName).clear().type(name);
     cy.wait(500);
@@ -61,7 +63,6 @@ class CreateMessage {
     cy.wait(500);
     cy.get(selectors.emailSubjectInput).clear().type("CallingPost Test");
     cy.wait(5000);
-    cy.get('.template-predefines__predifine').eq(0).click();
     cy.scrollTo("bottom")
     cy.get(selectors.sendMessageBtn).click({force: true});
     cy.get('.button--blue').click()
@@ -188,7 +189,7 @@ class CreateMessage {
 
   AddCallerId() {
     cy.wait(2000);
-    cy.get(selectors.createNewMsgBtn).eq(0).click();
+    cy.get(selectors.createNewMsgBtn).click();
     cy.wait(500);
     cy.get(selectors.selectVoiceMsgBtn).click();
     cy.get(selectors.nextButton).click();
@@ -205,7 +206,7 @@ class CreateMessage {
 
   ScheduleMessage(){
     cy.wait(2000);
-    cy.get(selectors.createNewMsgBtn).eq(0).click();
+    cy.get(selectors.createNewMsgBtn).click();
     cy.wait(500);
     cy.get(selectors.messageName).clear().type(`Schedule Message${Math.ceil(Math.random() * 999).toString()}`);
     cy.wait(500);
@@ -214,7 +215,6 @@ class CreateMessage {
     cy.wait(500);
     cy.get(selectors.emailSubjectInput).clear().type("CallingPost Test");
     cy.wait(5000);
-    cy.get('.template-predefines__predifine').eq(0).click();
     cy.get(selectors.sendMessageBtn).click();
     cy.wait(5000);
     cy.get(selectors.confirmDel).eq(-1).click();
@@ -294,7 +294,7 @@ class CreateMessage {
     cy.wait(500);
     cy.get(selectors.filterCheckbox).eq(0).click({force:true});
     cy.wait(500);
-    cy.get(selectors.createVoiceMsgBtn).eq(1).click();
+    cy.get('[fxhide=""] > .library__actions > .mat-focus-indicator').click({force:true});
     cy.wait(500);
     cy.get(selectors.confirmDel).click();
     cy.wait(4000);
@@ -366,7 +366,7 @@ class CreateMessage {
     cy.get(selectors.nextButton).click();
     cy.wait(2000);
     cy.get(selectors.nextButton).click()
-    cy.get('#mat-checkbox-10').click()
+    cy.get('#mat-checkbox-8').click()
     cy.get(selectors.nextButton).click()
 
     cy.get(selectors.scheduleMessage).click();
