@@ -25,6 +25,7 @@ Navigate to the project directory
 Run the command: `npx cypress open`
 
 If the tests are failing from the start when running from the command line cancel them using crtl+c.
+
 If the tests are failing from the start when running from the Cypress interface - close it and try again.
 ## Description
 - Custom commands for interacting with third-party services can be found in the `./cypress/support/commands.js` file.
